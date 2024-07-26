@@ -17,8 +17,8 @@ public class PlayerMovement : MonoBehaviour
     private float _speed;
 
     //booleano para cuando pierdes un  motor
-    [SerializeField] private bool rightMotorHadDestroyed;
-    [SerializeField] private bool leftMotorHadDestroyed;
+    [SerializeField] private bool rightMotorHadDestroyed = false;
+    [SerializeField] private bool leftMotorHadDestroyed = false;
 
     //el comoponente de input para leer la dirección
     [SerializeField] private InputTest _myInputTest;
@@ -26,6 +26,15 @@ public class PlayerMovement : MonoBehaviour
     //dirección de movimiento
 
     private Vector2 _direction;
+
+    public void destroyRightMotor()
+    {
+        rightMotorHadDestroyed = true;
+    }
+
+    public void destroyLeftMotor() { 
+        leftMotorHadDestroyed = true; 
+    }
 
     public void SetDirection()
     {
