@@ -13,8 +13,6 @@ public class SpawnerEntities : MonoBehaviour
 
     #region properties
 
-    [SerializeField] private float maxEntities_;
-
     [SerializeField] private GameObject [] entityPrefab_;
 
     private float elapsedTime_;
