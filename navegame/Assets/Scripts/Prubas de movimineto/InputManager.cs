@@ -30,7 +30,7 @@ public class InputManager : MonoBehaviour
         Vector2 direction = _myplayerInput.actions["Move"].ReadValue<Vector2>();
 
         direction.Normalize();
-
+        Debug.Log(direction);
         _myPlayerMovement.SetDirection(direction);
 
     }
