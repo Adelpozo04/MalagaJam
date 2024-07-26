@@ -25,7 +25,7 @@ public class LifeComponent : MonoBehaviour
     {
         currentLife -= damage;
 
-        if(currentLife < 0)
+        if(currentLife <= 0)
         {
             Destroy(gameObject);    
         }
