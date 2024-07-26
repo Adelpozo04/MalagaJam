@@ -68,6 +68,10 @@ public class PlayerMovement : MonoBehaviour
         {
             _speed = _speedFactor - (_speedFactor * _percentageToReduce) / 100;
         }
+        else if(rightMotorHadDestroyed && leftMotorHadDestroyed)
+        {
+            _speed = _speedFactor - (_speedFactor * _percentageToReduce) / 100;
+        }
 
         _myRigidBody.velocity = _direction * _speed;
         Debug.Log(_speed);
