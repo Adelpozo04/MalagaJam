@@ -49,11 +49,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (rightMotorHadDestroyed && !(_direction.y == 1 && !leftMotorHadDestroyed) && _direction.x > 0)
         {
-            _speed = (_speedFactor * _percentageToReduce) / 100;
+            _speed = _speedFactor - (_speedFactor * _percentageToReduce) / 100;
         }
         else if(leftMotorHadDestroyed && !(_direction.y == 1 && !rightMotorHadDestroyed) && _direction.x < 0)
         {
-            _speed = (_speedFactor * _percentageToReduce) / 100;
+            _speed = _speedFactor - (_speedFactor * _percentageToReduce) / 100;
         }
 
         _myRigidBody.velocity = _direction * _speed;
