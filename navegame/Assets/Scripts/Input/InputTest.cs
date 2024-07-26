@@ -10,6 +10,7 @@ public class InputTest : MonoBehaviour
     public PlayerInput playerInput;
 
     private int currentActionMap;
+    private int maxActionMaps;
 
     public string actionMapBaseName;
 
@@ -47,10 +48,12 @@ public class InputTest : MonoBehaviour
 
         print("leftPressed");
 
+        /*
         currentActionMap = 2;
         string currentActionMapName = actionMapBaseName + currentActionMap;
 
         SwitchActionMap(currentActionMapName);
+        */
     }
     public void moveRight(InputAction.CallbackContext context)
     {
@@ -113,6 +116,17 @@ public class InputTest : MonoBehaviour
         if (downPressed) vec += new Vector2(0, -1);
 
         return vec;
+    }
+
+
+    public void changeActionMap()
+    {
+        if(currentActionMap < maxActionMaps)
+
+        currentActionMap++;
+        string currentActionMapName = actionMapBaseName + currentActionMap;
+
+        SwitchActionMap(currentActionMapName);
     }
 
 }
