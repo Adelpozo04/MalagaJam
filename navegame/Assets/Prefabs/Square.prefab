@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5273627799913792741}
   - component: {fileID: 6824979937340298784}
   - component: {fileID: 633110655414412441}
-  - component: {fileID: 14932373143485914}
+  - component: {fileID: 5309957693959512712}
   m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
@@ -126,20 +126,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d71fbad77237e24fa7d6f9cbc44ae58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _force: 3
-  _reductionForce: 0
+  _speedFactor: 0
+  _percentageToReduce: 0
   rightMotorHadDestroyed: 0
   leftMotorHadDestroyed: 0
   _myInputTest: {fileID: 0}
---- !u!114 &14932373143485914
+--- !u!114 &5309957693959512712
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882336512691016807}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7ff5954092cf9948a7bc7bbca421116, type: 3}
+  m_Script: {fileID: 11500000, guid: 21ca2e55c37efd045aa580674b20ef60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
