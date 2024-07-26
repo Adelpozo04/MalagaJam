@@ -122,6 +122,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &858310446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 858310447}
+  m_Layer: 0
+  m_Name: SpawnEnemies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &858310447
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858310446}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.765349, y: -0.16944484, z: -0.009608068}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1255442458
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,6 +245,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1554058962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7821278737678340700, guid: 48feb5d3b674b81489ff383a458f1c8c, type: 3}
+  m_PrefabInstance: {fileID: 382134024121201767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1554058966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554058962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec0ae2b59f7fb64a8cb05ed09c5ac64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outOfFloor: 1
 --- !u!1001 &382134024121201767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -272,7 +321,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9073568763609639293, guid: 48feb5d3b674b81489ff383a458f1c8c, type: 3}
       propertyPath: changeDirSpeed_
-      value: 0.05
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9073568763609639293, guid: 48feb5d3b674b81489ff383a458f1c8c, type: 3}
       propertyPath: maxLateralSpeed_
@@ -281,7 +330,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7821278737678340700, guid: 48feb5d3b674b81489ff383a458f1c8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1554058966}
   m_SourcePrefab: {fileID: 100100000, guid: 48feb5d3b674b81489ff383a458f1c8c, type: 3}
 --- !u!1001 &2417688623524192210
 PrefabInstance:
@@ -347,3 +399,4 @@ SceneRoots:
   - {fileID: 1255442461}
   - {fileID: 382134024121201767}
   - {fileID: 2417688623524192210}
+  - {fileID: 858310447}
