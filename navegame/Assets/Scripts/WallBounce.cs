@@ -22,7 +22,8 @@ public class WallBounce : MonoBehaviour
     {
         
 
-        if(Camera.main.ViewportToWorldPoint(new Vector3(1, 0.5f, 0)).x <= transform.position.x || transform.position.x <= Camera.main.ViewportToWorldPoint(new Vector3(0, 0.5f, 0)).x)
+        if(Camera.main.ViewportToWorldPoint(new Vector3(1, 0.5f, 0)).x <= transform.position.x || 
+            transform.position.x <= Camera.main.ViewportToWorldPoint(new Vector3(0, 0.5f, 0)).x)
         {
 
             lm_.ChangeDirection(new Vector3(1, 0, 0));

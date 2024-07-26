@@ -28,6 +28,7 @@ public class InputTest : MonoBehaviour
 
         string currentActionMapName = actionMapBaseName + currentActionMap;
 
+
         SwitchActionMap(currentActionMapName);
     }
 
@@ -106,10 +107,10 @@ public class InputTest : MonoBehaviour
     {
         var vec = new Vector2(0, 0);
 
-        if (leftPressed) vec -= new Vector2(-1, 0);
-        if (rightPressed) vec -= new Vector2(1, 0);
-        if (upPressed) vec -= new Vector2(0,1);
-        if (downPressed) vec -= new Vector2(0, -1);
+        if (leftPressed) vec += new Vector2(-1, 0);
+        if (rightPressed) vec += new Vector2(1, 0);
+        if (upPressed) vec += new Vector2(0,1);
+        if (downPressed) vec += new Vector2(0, -1);
 
         return vec;
     }
