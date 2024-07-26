@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2999362475936049361}
   - component: {fileID: 7964632361524273614}
   - component: {fileID: 4716754317132823993}
+  - component: {fileID: -6359609124244526375}
   m_Layer: 0
   m_Name: Isometric Diamond
   m_TagString: Untagged
@@ -191,3 +192,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &-6359609124244526375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9021933544956269976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e94079dc1d1f4344acf5ede02f23380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7848089265289364465, guid: 29dc501d7345ef443b490eea6142ced3, type: 3}
+  velocity: 10
+  damage: 10
+  isPlayer: 0
+  fireRate: 0
+  elapsedTime: 0
+  enemyMinFireRate: 2
+  enemyMaxFireRate: 3
+  enemyElapsedTime: 0

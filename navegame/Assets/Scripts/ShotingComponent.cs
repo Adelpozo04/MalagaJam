@@ -15,9 +15,25 @@ public class ShotingComponent : MonoBehaviour
 
 
     [SerializeField] private float fireRate;
-    [SerializeField] private float elapsedTime;
+    private float elapsedTime;
+
+
+
+    [SerializeField] private float enemyMinFireRate;   
+    [SerializeField] private float enemyMaxFireRate;   
+
+    private float enemyfireRate;
+    private float enemyElapsedTime;
 
     private bool shooting = false;
+
+    private void Start()
+    {
+        if(!isPlayer)
+        {
+            enemyfireRate = Random.Range(enemyMinFireRate, enemyMaxFireRate);    
+        }
+    }
     private void ShootBullet()
     {
         GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
@@ -28,16 +44,36 @@ public class ShotingComponent : MonoBehaviour
         bulletCmp.setDir(isPlayer ? Vector2.up : Vector2.down);
         bulletCmp.setOwnerPlayer(isPlayer);
         bulletCmp.setVelocity(velocity);
+
+
+        if (!isPlayer)
+        {
+            enemyfireRate = Random.Range(enemyMinFireRate, enemyMaxFireRate);
+        }
+
     }
 
     private void Update()
     {
-        elapsedTime += Time.deltaTime;
-        
-        if(elapsedTime > fireRate && shooting)
+        if (isPlayer)
         {
-            elapsedTime = 0;
-            ShootBullet();
+            elapsedTime += Time.deltaTime;
+
+            if (elapsedTime > fireRate && shooting)
+            {
+                elapsedTime = 0;
+                ShootBullet();
+            }
+        }
+        else
+        {
+            enemyElapsedTime += Time.deltaTime;
+
+            if (enemyElapsedTime > enemyfireRate )
+            {
+                enemyElapsedTime = 0;
+                ShootBullet();
+            }
         }
     }
     public void startShooting()
