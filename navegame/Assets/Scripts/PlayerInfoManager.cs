@@ -5,12 +5,21 @@ using LootLocker.Requests;
 
 public class PlayerInfoManager : MonoBehaviour
 {
+
+    public LeaderBoard leaderboard_;
+
     // Start is called before the first frame update
     void Start()
     {
 
-        StartCoroutine(LoginRutine());
+        StartCoroutine(SetupRutine());
         
+    }
+
+    IEnumerator SetupRutine()
+    {
+        yield return LoginRutine();
+        yield return leaderboard_.FetchTopHighscoreRoutine();
     }
 
     IEnumerator LoginRutine()
