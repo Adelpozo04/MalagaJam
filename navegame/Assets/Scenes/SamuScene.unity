@@ -288,6 +288,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 8648ced3-788b-46c1-8c57-876fba61ebcb
     m_ActionName: StartAction/MoveLeft[/Keyboard/a]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 520689904}
+        m_TargetAssemblyTypeName: InputTest, Assembly-CSharp
+        m_MethodName: moveLeft
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: f310fed2-5e75-409a-aec8-c84790492f19
+    m_ActionName: Action2/MoveLeft[/Keyboard/f]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: StartAction
@@ -306,6 +322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 520689903}
+  actionMapName: Action2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
