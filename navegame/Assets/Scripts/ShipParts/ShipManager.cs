@@ -19,7 +19,7 @@ public class ShipManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _myPlayerMovement.GetComponent<PlayerMovement>();
+        _myPlayerMovement = GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame

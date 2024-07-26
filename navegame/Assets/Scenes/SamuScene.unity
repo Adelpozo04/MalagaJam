@@ -237,6 +237,10 @@ PrefabInstance:
       propertyPath: _myInputTest
       value: 
       objectReference: {fileID: 712770276}
+    - target: {fileID: 633110655414412441, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
+      propertyPath: _speedFactor
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1882336512691016807, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
       propertyPath: m_Name
       value: Square
@@ -291,6 +295,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1882336512691016807, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1860599621}
+    - targetCorrespondingSourceObject: {fileID: 1882336512691016807, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1860599627}
   m_SourcePrefab: {fileID: 100100000, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
 --- !u!1 &1860599614 stripped
 GameObject:
@@ -330,6 +337,18 @@ MonoBehaviour:
   isPlayer: 1
   fireRate: 0.5
   elapsedTime: 0
+--- !u!114 &1860599627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860599614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21ca2e55c37efd045aa580674b20ef60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3669691306853381701
 PrefabInstance:
   m_ObjectHideFlags: 0
