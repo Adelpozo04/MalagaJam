@@ -37,7 +37,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Clarity: 0.0023
+    - _Clarity: 0.04
     - _GrainThickness: 1.5
     - _Interpolation: 10
     - _LineThickness: 0.1

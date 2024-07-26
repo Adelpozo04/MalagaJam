@@ -2,27 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShipComponent : MonoBehaviour
+public class CameraComponent : ShipComponent
 {
     #region parameters
-    private int compLife_;
     #endregion
 
     #region references
-    private ShipManager myShipMng_;
+    [SerializeField]
+    private Material cameraInterference;
     #endregion
 
     #region methods
-    virtual public void GotHit()
+    override public void GotHit()
     {
-
+        cameraInterference.SetFloat("Clarity", 0.03f);
     }
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
-        myShipMng_ = this.transform.parent.GetComponent<ShipManager>();
+        
     }
 
     // Update is called once per frame
