@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class InputTest : MonoBehaviour
@@ -21,6 +22,9 @@ public class InputTest : MonoBehaviour
     private bool upPressed = false;
     private bool downPressed = false;
     private bool shootPressed = false;
+
+    public UnityEvent startShoot;
+    public UnityEvent endShoot;
 
     // Start is called before the first frame update
     void Start()
@@ -86,11 +90,19 @@ public class InputTest : MonoBehaviour
     }
     public void shoot(InputAction.CallbackContext context)
     {
-        if (context.canceled) shootPressed = false;
+        if (context.canceled)
+        {
+            shootPressed = false;
+            endShoot.Invoke();
+        }
+
+
 
         if (!context.started) return;
 
-        shootPressed = true;    
+        shootPressed = true;
+
+        startShoot.Invoke();
 
         print("shootPressed");
     }

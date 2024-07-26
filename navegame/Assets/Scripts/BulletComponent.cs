@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class BulletComponent : MonoBehaviour
 {
+    [SerializeField] private float timeAlive = 10f;
+    private float elapsedTime = 0;
+
     private float velocity;
     private Vector2 direction;
     private float damage;
@@ -36,36 +39,48 @@ public class BulletComponent : MonoBehaviour
     private void Start()
     {
         myRigidbody2D = GetComponent<Rigidbody2D>();    
-        myRigidbody2D.velocity = direction*velocity;    
+        myRigidbody2D.velocity = direction*velocity;
+
+        elapsedTime = 0;
     }
 
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void Update()
     {
-        if(collision != null)
+        elapsedTime += Time.deltaTime;   
+
+        if (elapsedTime > timeAlive)
+        {
+            Destroy(gameObject);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision != null)
         {
             var bulletCmp = collision.gameObject.GetComponent<BulletComponent>();
 
             //si chocamos con otra bala de distinto dueño
-            if (bulletCmp != null && bulletCmp.getOwnerPlayer()!= ownerPlayer)
+            if (bulletCmp != null && bulletCmp.getOwnerPlayer() != ownerPlayer)
             {
                 Destroy(gameObject);
                 Destroy(collision.gameObject);
                 return;
-            }    
-
-            var lifeCmp = collision.gameObject.GetComponent<LifeComponent>();   
-
-            if(lifeCmp != null)
-            {
-
-
-
             }
 
+            var lifeCmp = collision.gameObject.GetComponent<LifeComponent>();
 
+            //si chocamos contra un objeto de otro grupo(player/enemigo)
+
+            if (lifeCmp != null &&
+               ((lifeCmp.getIsPlayer() && !ownerPlayer) ||
+                 (!lifeCmp.getIsPlayer() && ownerPlayer)
+                 ))
+            {
+                lifeCmp.reciveDamage(damage);
+                Destroy(gameObject);
+            }
         }
-
     }
+
 
 }

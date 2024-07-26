@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //if (_myRigidBody.velocity.magnitude < _maxSpeed)
         SetDirection();
-        Debug.Log(_direction);
+        //Debug.Log(_direction);
 
         //if (rightMotorHadDestroyed && (_direction.y == 1 && !leftMotorHadDestroyed) && _direction.x != 0)
         //{

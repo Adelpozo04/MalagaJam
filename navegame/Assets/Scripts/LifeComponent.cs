@@ -6,7 +6,9 @@ public class LifeComponent : MonoBehaviour
 {
 
     [SerializeField] private float maxLife;
-    [SerializeField] private float currentLife; 
+    [SerializeField] private float currentLife;
+
+    [SerializeField] private bool isPlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -29,4 +31,5 @@ public class LifeComponent : MonoBehaviour
         }
     }
 
+    public bool getIsPlayer() { return isPlayer; }
 }
