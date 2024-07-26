@@ -27,11 +27,10 @@ public class InputManager : MonoBehaviour
     void Update()
     {
 
-        Vector2 direction = _myplayerInput.actions["Move"].ReadValue<Vector2>();
+        //Vector2 direction = _myplayerInput.actions["Move"].ReadValue<Vector2>();
 
-        direction.Normalize();
-
-        _myPlayerMovement.SetDirection(direction);
+        //direction.Normalize();
+        //_myPlayerMovement.SetDirection(direction);
 
     }
 }
