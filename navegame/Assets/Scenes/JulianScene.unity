@@ -783,6 +783,14 @@ PrefabInstance:
       propertyPath: _myInputTest
       value: 
       objectReference: {fileID: 1576596405}
+    - target: {fileID: 633110655414412441, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
+      propertyPath: _speedFactor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 633110655414412441, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
+      propertyPath: _percentageToReduce
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 1882336512691016807, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
       propertyPath: m_Name
       value: Square
