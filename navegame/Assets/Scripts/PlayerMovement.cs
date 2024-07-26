@@ -60,11 +60,11 @@ public class PlayerMovement : MonoBehaviour
         _speed = _speedFactor;
 
 
-        if (rightMotorHadDestroyed && !(_direction.y == 1 && !leftMotorHadDestroyed) && _direction.x > 0)
+        if (rightMotorHadDestroyed && !(_direction.y == 1 && !leftMotorHadDestroyed) && _direction.x < 0)
         {
             _speed = _speedFactor - (_speedFactor * _percentageToReduce) / 100;
         }
-        else if(leftMotorHadDestroyed && !(_direction.y == 1 && !rightMotorHadDestroyed) && _direction.x < 0)
+        else if(leftMotorHadDestroyed && !(_direction.y == 1 && !rightMotorHadDestroyed) && _direction.x > 0)
         {
             _speed = _speedFactor - (_speedFactor * _percentageToReduce) / 100;
         }
@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
             _speed = _speedFactor - (_speedFactor * _percentageToReduce) / 100;
         }
 
-        _myRigidBody.velocity = _direction * -_speed;
+        _myRigidBody.velocity = _direction * _speed;
         Debug.Log(_speed);
     }
 }
