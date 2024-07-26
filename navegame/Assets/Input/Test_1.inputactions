@@ -1,0 +1,34 @@
+{
+    "name": "Test_1",
+    "maps": [
+        {
+            "name": "StartAction",
+            "id": "93241a33-1975-4964-a6a4-3fd86f94593c",
+            "actions": [
+                {
+                    "name": "MoveLeft",
+                    "type": "Value",
+                    "id": "8648ced3-788b-46c1-8c57-876fba61ebcb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "fca7fde6-2c67-4d16-9386-d007754fd74e",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
