@@ -1,6 +1,6 @@
-### JUEGO DE LA NAVE
+# JUEGO DE LA NAVE
 ## MALAGA JAM 18
-## by MONDONGO
+### by MONDONGO
 
 
 - La gasolina baja constantemente.
