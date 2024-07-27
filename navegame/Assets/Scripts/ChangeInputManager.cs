@@ -22,7 +22,7 @@ public class ChangeInputManager : MonoBehaviour
         FuelBarController.Instance.SubstractFuel(fuelSpeendPerSecond* Time.deltaTime);
 
 
-        if (FuelBarController.Instance.getFuelConsumed() >= fuelCostToChange[index]) {
+        if (index < fuelCostToChange.Count && FuelBarController.Instance.getFuelConsumed() >= fuelCostToChange[index]) {
             index++;
             inputController.changeActionMap();
         }
