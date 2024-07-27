@@ -116,6 +116,8 @@ public class ControlHelper : MonoBehaviour
         }
         else
         {
+            image.gameObject.SetActive(false);
+
             textCmp.text = controlName;
             textCmp.gameObject.SetActive(true);
 
