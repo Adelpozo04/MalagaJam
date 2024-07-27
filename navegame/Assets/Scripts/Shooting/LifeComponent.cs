@@ -10,6 +10,8 @@ public class LifeComponent : MonoBehaviour
 
     [SerializeField] private bool isPlayer;
 
+    [SerializeField] private LeaderBoard leaderBoard_;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,9 @@ public class LifeComponent : MonoBehaviour
 
         if(currentLife <= 0)
         {
+
+
+
             Destroy(gameObject);    
         }
     }
