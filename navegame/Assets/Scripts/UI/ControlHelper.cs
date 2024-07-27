@@ -20,24 +20,40 @@ public class ControlHelper : MonoBehaviour
     {
         if(controlName == "rightshift")
         {
-            textCmp.gameObject.SetActive(false);
-            image.gameObject.SetActive(true);
+            //textCmp.gameObject.SetActive(false);
+            //image.gameObject.SetActive(true);
+
+            textCmp.gameObject.SetActive(true);
+            image.gameObject.SetActive(false);
+
+            textCmp.fontSize = 70;
+            textCmp.text = "R \nSHIFT";
+
         }
         else if (controlName == "leftclick")
         {
             textCmp.gameObject.SetActive(false);
             image.gameObject.SetActive(true);
 
+            image.sprite = SpritesContainer.Instance.leftClick;
+
+
         }
         else if (controlName == "rightclick")
         {
             textCmp.gameObject.SetActive(false);
             image.gameObject.SetActive(true);
+
+            image.sprite = SpritesContainer.Instance.rightClick;
+
         }
         else if (controlName == "middleclick")
         {
             textCmp.gameObject.SetActive(false);
             image.gameObject.SetActive(true);
+
+            image.sprite = SpritesContainer.Instance.middleClick;
+
 
         }
         else if (controlName == "shift")
