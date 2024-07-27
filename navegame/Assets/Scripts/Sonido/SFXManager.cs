@@ -42,5 +42,8 @@ public class SFXManager : MonoBehaviour
 
     }
 
+    public void playLongSFXClip()
+    {
 
+    }
 }
