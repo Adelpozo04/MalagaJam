@@ -13,7 +13,7 @@ public class ShipComponent : MonoBehaviour
     #endregion
 
     #region methods
-    public void GotHit()
+    virtual public void GotHit()
     {
 
     }
