@@ -153,7 +153,7 @@ public class SFXManager : MonoBehaviour
         }
         
         if(!leftSpeakerAlive && !rightSpeakerAlive)
-            mute = true;
+            volumeFactor = 0;
             
     }
 }
