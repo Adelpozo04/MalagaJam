@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2475650655898319168}
   - component: {fileID: 6644374403035311913}
   - component: {fileID: 1658502802381149723}
+  - component: {fileID: 8597011299146517001}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -35,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -168, y: 149}
+  m_AnchoredPosition: {x: -209, y: 139}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2475650655898319168
@@ -70,8 +71,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8b01488ec95cab842b8880e369f96f26, type: 2}
+  m_sharedMaterial: {fileID: 5451722706910613838, guid: 8b01488ec95cab842b8880e369f96f26, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -101,8 +102,8 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_fontStyle: 1
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -152,3 +153,19 @@ MonoBehaviour:
   winOverTime: 100
   timeWhenWin: 2
   scoreText: {fileID: 6644374403035311913}
+--- !u!114 &8597011299146517001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8740315028049575755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32b9bb5e20ac1434fbc9b3551132715d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetScale: 1.4
+  InitScale: 1
+  FramesCount: 10
+  AnimationTimeSeconds: 0.12
