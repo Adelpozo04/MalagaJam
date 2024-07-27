@@ -7,33 +7,31 @@ using UnityEngine.Events;
 public class PlayerMovement : MonoBehaviour
 {
 
+    //TODO: Testear los cambios
     private Rigidbody2D _myRigidBody;
-
+    
     //afecta la rapidez del movimiento
     [SerializeField] private float _speedFactor;
     //afecta a la reducci�n de velocidad cuando pierder un motor
     [SerializeField] private float _percentageToReduce;
-    //es el factor de reducci�n real que se utiliza leyendo los boleanos
-    private float _speed;
-
-    //booleano para cuando pierdes un  motor
-    [SerializeField] private bool rightMotorHadDestroyed = false;
-    [SerializeField] private bool leftMotorHadDestroyed = false;
+    //La velocidad real al moverse hacia la izquierda
+    private float _leftSpeed;
+    //La velocidad real al moverse hacia la derecha
+    private float _rightSpeed;
 
     //el comoponente de input para leer la direcci�n
     [SerializeField] private InputTest _myInputTest;
 
     //direcci�n de movimiento
-
     private Vector2 _direction;
 
     public void destroyRightMotor()
     {
-        rightMotorHadDestroyed = true;
-    }
+        _rightSpeed = _speedFactor - (_speedFactor * _percentageToReduce) / 100;
+    }    
 
     public void destroyLeftMotor() { 
-        leftMotorHadDestroyed = true; 
+        _leftSpeed = _speedFactor - (_speedFactor * _percentageToReduce) / 100;
     }
 
     public void SetDirection()
@@ -45,8 +43,9 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         _myRigidBody = GetComponent<Rigidbody2D>();
-        //_myInputTest = GetComponent<InputTest>();
         _direction = Vector2.zero;
+        _rightSpeed = _speedFactor;
+        _leftSpeed = _speedFactor;
     }
 
     // Update is called once per frame
@@ -56,24 +55,21 @@ public class PlayerMovement : MonoBehaviour
         SetDirection();
 
         //Debug.Log(_direction);
-
-        _speed = _speedFactor;
-
-
-        if (rightMotorHadDestroyed && !(_direction.y == 1 && !leftMotorHadDestroyed) && _direction.x < 0)
+        
+        if (_direction.x <= 0)
         {
-            _speed = _speedFactor - (_speedFactor * _percentageToReduce) / 100;
+            _myRigidBody.velocity = _direction * _rightSpeed;
         }
-        else if(leftMotorHadDestroyed && !(_direction.y == 1 && !rightMotorHadDestroyed) && _direction.x > 0)
+        else
         {
-            _speed = _speedFactor - (_speedFactor * _percentageToReduce) / 100;
+            _myRigidBody.velocity = _direction * _leftSpeed;
         }
-        else if(rightMotorHadDestroyed && leftMotorHadDestroyed)
+        if (_direction.y != 0)
         {
-            _speed = _speedFactor - (_speedFactor * _percentageToReduce) / 100;
+            //Para que si se va hacia alante o hacia atrás, la vecidad sea la media de las velocidades laterales
+            _myRigidBody.velocity = _direction * (_leftSpeed + _rightSpeed) / 2;
         }
 
-        _myRigidBody.velocity = _direction * _speed;
-        Debug.Log(_speed);
+        Debug.Log(_myRigidBody.velocity.x);
     }
 }
