@@ -623,9 +623,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Juli\xE1n Serrano Chac\xF3n - Dise\xF1o, Programaci\xF3n, Testeo, Musica
-    y sonido.\nAdr\xEDan del Pozo Hern\xE1ndez - Roles\nSamuel Garc\xEDa Baz\xE1n
-    - Roles\nDiego Monternegro Calvo -Roles\nJos\xE9 Antonio Carmano Alfonsel -Roles\nPablo
-    Marcos Serrano - Roles\nJiale He - Roles"
+    y sonido.\nAdr\xEDan del Pozo Hern\xE1ndez - Dise\xF1o,Programaci\xF3n, Testeo\nSamuel
+    Garc\xEDa Baz\xE1n - Dise\xF1o,Programaci\xF3n, Testeo\nDiego Monternegro Calvo
+    -Dise\xF1o,Programaci\xF3n, Testeo\nJos\xE9 Antonio Carmano Alfonsel -Arte ,Dise\xF1o\nPablo
+    Marcos Serrano - Dise\xF1o,Programaci\xF3n, Testeo,Sonido\nJiale He - Arte,Programaci\xF3n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0f442bc824f4b684f86aaf8e8ada3cdf, type: 2}
   m_sharedMaterial: {fileID: 4290706537323977036, guid: 0f442bc824f4b684f86aaf8e8ada3cdf, type: 2}
