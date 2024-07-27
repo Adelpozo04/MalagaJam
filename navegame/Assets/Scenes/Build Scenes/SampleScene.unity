@@ -1661,6 +1661,86 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1590397618}
     m_Modifications:
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[2].up
+      value: t
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[3].up
+      value: j
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[4].up
+      value: w
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[5].up
+      value: leftClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[2].down
+      value: g
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[2].left
+      value: f
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[3].down
+      value: g
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[3].left
+      value: f
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[4].down
+      value: s
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[4].left
+      value: leftClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[5].down
+      value: rightClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[5].left
+      value: w
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[2].right
+      value: h
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[2].shoot
+      value: rightShift
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[3].right
+      value: h
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[3].shoot
+      value: rightShift
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[4].right
+      value: rightClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[4].shoot
+      value: middleClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[5].right
+      value: s
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: mapActionsNamesList.Array.data[5].shoot
+      value: spacebar
+      objectReference: {fileID: 0}
     - target: {fileID: 7492145023473425334, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
       propertyPath: m_Name
       value: CurrentControls
