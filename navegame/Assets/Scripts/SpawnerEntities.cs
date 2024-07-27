@@ -60,7 +60,7 @@ public class SpawnerEntities : MonoBehaviour
 
                 Debug.Log(totalProb + " / " + (prob / 100.0) + " / " + (propEntityAppear_[i]));
 
-                if ((prob / 100.0) < totalProb)
+                if ((prob / 100.0) > totalProb)
                 {
                     i++;
                 }
