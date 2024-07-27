@@ -44,6 +44,6 @@ public class ControlHelperManager : MonoBehaviour
 
     private void Start()
     {
-        updateControlHelpers(0);    
+        updateControlHelpers(2);    
     }
 }

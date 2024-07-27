@@ -1741,6 +1741,10 @@ PrefabInstance:
       propertyPath: mapActionsNamesList.Array.data[5].shoot
       value: spacebar
       objectReference: {fileID: 0}
+    - target: {fileID: 6025105276746996932, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: m_text
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7492145023473425334, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
       propertyPath: m_Name
       value: CurrentControls
