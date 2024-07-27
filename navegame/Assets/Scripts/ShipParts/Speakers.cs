@@ -9,7 +9,7 @@ public class Speakers : ShipComponent
 
     override public void GotHit()
     {
-        GetComponent<Animator>().SetTrigger("Destroy");
+        //GetComponent<Animator>().SetTrigger("Destroy");
         SFXManager.instance.playSFXClip(destroyClip, transform, 1f);
         SFXManager.instance.destroySpeaker(isRight);
     }
