@@ -26,7 +26,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.14422333, y: -13.485708, z: -0.21032633}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7124681331771060728}
@@ -687,11 +687,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3251317684296047964, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.08830752
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3251317684296047964, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.08830752
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3251317684296047964, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
       propertyPath: m_LocalScale.z
@@ -832,15 +832,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4492774282213888956, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 31
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 4492774282213888956, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
       propertyPath: m_ActionEvents.Array.data[30].m_ActionId
       value: 3e5c99dc-c9af-45de-9584-ebf48f96570b
       objectReference: {fileID: 0}
     - target: {fileID: 4492774282213888956, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[31].m_ActionId
+      value: c6d70ab3-04ec-4976-b30a-ef03a4d2b486
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492774282213888956, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[32].m_ActionId
+      value: aa31d691-c212-4bee-a4ae-f0a477704c69
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492774282213888956, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[33].m_ActionId
+      value: a0a3ae77-d10c-42d8-9302-781c04690b22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492774282213888956, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[34].m_ActionId
+      value: 4043ab61-9ade-4c57-a873-dd8d283aa407
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492774282213888956, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[35].m_ActionId
+      value: 3ccf3cd4-5215-460d-bc31-4df9cb7d1ce7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492774282213888956, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
       propertyPath: m_ActionEvents.Array.data[30].m_ActionName
       value: Action1/Pause [/Keyboard/escape]
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492774282213888956, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[31].m_ActionName
+      value: Action2/Pause [/Keyboard/escape]
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492774282213888956, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[32].m_ActionName
+      value: Action3/Pause [/Keyboard/escape]
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492774282213888956, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[33].m_ActionName
+      value: Action4/Pause [/Keyboard/escape]
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492774282213888956, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[34].m_ActionName
+      value: Action5/Pause [/Keyboard/escape]
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492774282213888956, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[35].m_ActionName
+      value: Action6/Pause [/Keyboard/escape]
       objectReference: {fileID: 0}
     - target: {fileID: 6239384511561350220, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
       propertyPath: m_Name

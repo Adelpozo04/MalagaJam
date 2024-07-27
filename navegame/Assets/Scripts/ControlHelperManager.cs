@@ -34,10 +34,16 @@ public class ControlHelperManager : MonoBehaviour
             print("error index out of bounds");
         }
 
-        left.setControl(mapActionsNamesList[index].left);
-        right.setControl(mapActionsNamesList[index].right);
-        up.setControl(mapActionsNamesList[index].up);
-        down.setControl(mapActionsNamesList[index].down);
-        shoot.setControl(mapActionsNamesList[index].shoot);    
+        left.setControl(mapActionsNamesList[index].left.ToLower());
+        right.setControl(mapActionsNamesList[index].right.ToLower());
+        up.setControl(mapActionsNamesList[index].up.ToLower());
+        down.setControl(mapActionsNamesList[index].down.ToLower());
+        shoot.setControl(mapActionsNamesList[index].shoot.ToLower());    
+    }
+
+
+    private void Start()
+    {
+        updateControlHelpers(0);    
     }
 }

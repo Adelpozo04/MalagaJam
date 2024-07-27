@@ -8,7 +8,7 @@ public class LifeComponent : MonoBehaviour
     [SerializeField] private float maxLife;
     [SerializeField] private float currentLife;
 
-
+    [SerializeField] GameObject fuelPrefab;
 
     [SerializeField] private AudioClip dieClip;
 
@@ -32,6 +32,7 @@ public class LifeComponent : MonoBehaviour
             int p = GetComponent<ScoreAmound>().GetPoints();
             ScoreManager.Instance.AddScore(p);
             SFXManager.instance.playSFXClip(dieClip, transform, 1f);
+            GameObject hwei = Instantiate(fuelPrefab, transform.position, Quaternion.identity);
             Destroy(gameObject);    
         }
     }
