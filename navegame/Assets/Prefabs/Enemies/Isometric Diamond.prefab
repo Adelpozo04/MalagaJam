@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4716754317132823993}
   - component: {fileID: -6359609124244526375}
   - component: {fileID: -7813118114013149215}
+  - component: {fileID: -6635596744310835180}
   m_Layer: 0
   m_Name: Isometric Diamond
   m_TagString: Untagged
@@ -227,3 +228,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsWhenKilled: 750
+--- !u!95 &-6635596744310835180
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9021933544956269976}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4f173ffcb22fc9b41b6ff37f0e96f9c3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

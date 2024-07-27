@@ -52,6 +52,7 @@ public class ShotingComponent : MonoBehaviour
 
         if (!isPlayer)
         {
+            GetComponent<Animator>().SetTrigger("Atk");
             enemyfireRate = Random.Range(enemyMinFireRate, enemyMaxFireRate);
         }
 
