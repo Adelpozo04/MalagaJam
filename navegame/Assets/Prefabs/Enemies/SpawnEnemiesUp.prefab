@@ -53,9 +53,9 @@ MonoBehaviour:
   - {fileID: 9021933544956269976, guid: ef52d79f4ee71b147bae03f617c02293, type: 3}
   - {fileID: 7821278737678340700, guid: 48feb5d3b674b81489ff383a458f1c8c, type: 3}
   propEntityAppear_:
-  - 0.5
-  - 0.25
-  - 0.25
+  - 0.3
+  - 0.3
+  - 0.4
 --- !u!114 &2975910371430159609
 MonoBehaviour:
   m_ObjectHideFlags: 0
