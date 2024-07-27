@@ -6,13 +6,14 @@ using UnityEngine.Serialization;
 public class ShipManager : MonoBehaviour
 {
     #region parameters
+    [SerializeField] private int fuelDamage; //La cantidad de fuel que pierdes al ser golpeado sin componente
+    //Yo diría que cada componente te pase el daño que vayan a sufrir,
+    //así si un componente es golpeado demasiado sufres más daño
     #endregion
 
     #region references
     PlayerMovement _myPlayerMovement;
     [SerializeField] private FuelBarController fuelBar;
-    [SerializeField] private int fuelDamage; //La cantidad de fuel que pierdes al ser golpeado sin componente
-    //Yo diría que cada componente te pase el daño que vayan a sufrir, así si un componente es golpeado demasiado sufres más daño
     #endregion
 
     #region methods
@@ -26,9 +27,9 @@ public class ShipManager : MonoBehaviour
         _myPlayerMovement.destroyLeftMotor();
     }
 
-    public void sufferDamage()
+    public void sufferDamage(int damage)
     {
-        fuelBar.SubstractFuel(fuelDamage);
+        fuelBar.SubstractFuel(damage);
     }
     #endregion
 

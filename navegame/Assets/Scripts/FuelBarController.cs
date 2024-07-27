@@ -79,7 +79,8 @@ public class FuelBarController : MonoBehaviour
     void GameOver()
     {
         //Descomentar cuando esté funcionando el leaderBoard
-        leaderBoard_.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
-        SceneManager.LoadScene("MenuPrincipal");
+        
+        //leaderBoard_.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
+        //SceneManager.LoadScene("MenuPrincipal");
     }
 }

@@ -317,6 +317,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 699406364253907932, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
+      propertyPath: fuelBar
+      value: 
+      objectReference: {fileID: 982692317}
+    - target: {fileID: 3896167890588078628, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
+      propertyPath: fuelCostToChange.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896167890588078628, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
+      propertyPath: fuelCostToChange.Array.data[0]
+      value: 10000
+      objectReference: {fileID: 0}
     - target: {fileID: 7209875352762749638, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.75
@@ -365,6 +377,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7349614350998858339, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
+      propertyPath: fuelBar
+      value: 
+      objectReference: {fileID: 982692317}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -564,6 +580,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1717295558792724806, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
   m_PrefabInstance: {fileID: 982692315}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &982692317 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6532813104589903564, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
+  m_PrefabInstance: {fileID: 982692315}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89a4f3f76eb52eb48be48c2c766b25b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1447701254
 PrefabInstance:
   m_ObjectHideFlags: 0
