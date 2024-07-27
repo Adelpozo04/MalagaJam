@@ -18,12 +18,12 @@ public class LeaderBoard : MonoBehaviour
         
     }
 
-    //AÑADIR LLAMADA EN EL METODO EN EL QUE MUERE EL JUGADOR
+    //AÃ‘ADIR LLAMADA EN EL METODO EN EL QUE MUERE EL JUGADOR
     public IEnumerator SumbitScoreRoutine(int scoreToUpload)
     {
         bool done = false;
 
-        string playerID = PlayerPrefs.GetString("PlayerID");
+        string playerID = PlayerPrefs.GetString("PlayerId");
 
         LootLockerSDKManager.SubmitScore(playerID, scoreToUpload, leaderboardID, (response) =>
         {

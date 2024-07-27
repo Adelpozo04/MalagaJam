@@ -15,14 +15,24 @@ public class CameraComponent : ShipComponent
     #region methods
     override public void GotHit()
     {
-        cameraInterference.SetFloat("Clarity", 0.03f);
+        if(compLife_ == 2) {
+            cameraInterference.SetFloat("_Clarity", 0.01f);
+        }
+        else if (compLife_ == 1)
+        {
+            cameraInterference.SetFloat("_Clarity", 0.03f);
+        }
+        else
+        {
+            myShipMng_.sufferDamage();
+        }
     }
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        compLife_ = 2;
     }
 
     // Update is called once per frame

@@ -9,6 +9,8 @@ public class WallBounce : MonoBehaviour
 
     private LinealMovement lm_;
 
+    [SerializeField] private float margenInterno = 0;
+
     #endregion
 
     // Start is called before the first frame update
@@ -22,8 +24,8 @@ public class WallBounce : MonoBehaviour
     {
         
 
-        if(Camera.main.ViewportToWorldPoint(new Vector3(1, 0.5f, 0)).x <= transform.position.x || 
-            transform.position.x <= Camera.main.ViewportToWorldPoint(new Vector3(0, 0.5f, 0)).x)
+        if(Camera.main.ViewportToWorldPoint(new Vector3(1, 0.5f, 0)).x <= transform.position.x + margenInterno || 
+            transform.position.x - margenInterno <= Camera.main.ViewportToWorldPoint(new Vector3(0, 0.5f, 0)).x)
         {
 
             lm_.ChangeDirection(new Vector3(1, 0, 0));

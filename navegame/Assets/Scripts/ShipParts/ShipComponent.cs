@@ -5,11 +5,11 @@ using UnityEngine;
 public class ShipComponent : MonoBehaviour
 {
     #region parameters
-    private int compLife_;
+    protected int compLife_;
     #endregion
 
     #region references
-    private ShipManager myShipMng_;
+    protected ShipManager myShipMng_;
     #endregion
 
     #region methods

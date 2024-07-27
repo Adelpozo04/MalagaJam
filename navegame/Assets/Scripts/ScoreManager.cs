@@ -12,14 +12,24 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] private int winOverTime = 100;
     [SerializeField] private int timeWhenWin = 1;
     [SerializeField] private TMP_Text scoreText;
+    
     #endregion
 
     #region properties
 
     private SizeChangeAnim scAnim;
-    private float _elapsedTime = 0;
-    private float _totalPoints;
+    private float _elapsedTime;
+    private int _totalPoints;
     #endregion
+
+    static private ScoreManager instance;
+    static public ScoreManager Instance { get { return instance; } }
+
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
@@ -42,15 +52,20 @@ public class ScoreManager : MonoBehaviour
     }
 
     
-    void UpdateText()
+    private void UpdateText()
     {
         scoreText.text = _totalPoints.ToString(CultureInfo.CurrentCulture);
     }
 
-    void AddScore(int points)
+    public void AddScore(int points)
     {
         _totalPoints += points;
         scAnim.DoIt();
         UpdateText();
+    }
+
+    public int GetScore()
+    {
+        return _totalPoints;
     }
 }

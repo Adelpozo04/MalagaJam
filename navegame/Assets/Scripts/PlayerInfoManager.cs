@@ -21,6 +21,7 @@ public class PlayerInfoManager : MonoBehaviour
 
     public void SetPlayerName()
     {
+
         LootLockerSDKManager.SetPlayerName(player_input_.text, (response) =>
         {
             if (response.success)
@@ -48,7 +49,7 @@ public class PlayerInfoManager : MonoBehaviour
             if (response.success)
             {
                 Debug.Log("Jugador se unio");
-                PlayerPrefs.SetString("Player Id", response.player_id.ToString());
+                PlayerPrefs.SetString("PlayerId", (response.player_id + 1).ToString());
                 done = true;
             }
             else

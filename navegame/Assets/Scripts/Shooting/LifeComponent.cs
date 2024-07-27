@@ -7,9 +7,7 @@ public class LifeComponent : MonoBehaviour
 
     [SerializeField] private float maxLife;
     [SerializeField] private float currentLife;
-
-    [SerializeField] private bool isPlayer;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -27,9 +25,9 @@ public class LifeComponent : MonoBehaviour
 
         if(currentLife <= 0)
         {
+            int p = GetComponent<ScoreAmound>().GetPoints();
+            ScoreManager.Instance.AddScore(p);
             Destroy(gameObject);    
         }
     }
-
-    public bool getIsPlayer() { return isPlayer; }
 }

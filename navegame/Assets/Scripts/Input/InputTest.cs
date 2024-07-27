@@ -11,7 +11,7 @@ public class InputTest : MonoBehaviour
     public PlayerInput playerInput;
 
     private int currentActionMap;
-    private int maxActionMaps;
+    [SerializeField]  private int maxActionMaps;
 
     public string actionMapBaseName;
 
