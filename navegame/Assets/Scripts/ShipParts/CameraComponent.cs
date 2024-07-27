@@ -8,8 +8,9 @@ public class CameraComponent : ShipComponent
     #endregion
 
     #region references
-    [SerializeField]
-    private Material cameraInterference;
+    /*[SerializeField]
+    private Material cameraInterference;*/
+    private VHSPostProcessEffect effect;
 
     [SerializeField] private AudioClip destroyClip;
     #endregion
@@ -17,14 +18,10 @@ public class CameraComponent : ShipComponent
     #region methods
     override public void GotHit()
     {
-
-        Debug.Log(compLife_);
-        if(compLife_ == 2) {
-            cameraInterference.SetFloat("_Clarity", 0.01f);
-        }
-        else if (compLife_ == 1)
+        if (compLife_ == 1)
         {
-            cameraInterference.SetFloat("_Clarity", 0.04f);
+            //cameraInterference.SetFloat("_Clarity", 0.04f);
+            effect.enabled = true;
         }
         else
         {
@@ -39,7 +36,9 @@ public class CameraComponent : ShipComponent
     void Start()
     {
         compLife_ = 2;
-        cameraInterference.SetFloat("_Clarity", 0f);
+        //cameraInterference.SetFloat("_Clarity", 0f);
+        effect = Camera.main.gameObject.GetComponent<VHSPostProcessEffect>();
+        effect.enabled = false;
         myShipMng_ = this.transform.parent.gameObject.GetComponent<ShipManager>();
     }
 
