@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4977873453696815414}
   - component: {fileID: -653920554504065405}
   - component: {fileID: 8823232176438677812}
+  - component: {fileID: -4126405511029804665}
   m_Layer: 0
   m_Name: LinealEnemy
   m_TagString: Untagged
@@ -134,6 +135,7 @@ MonoBehaviour:
   maxLife: 10
   currentLife: 0
   isPlayer: 0
+  leaderBoard_: {fileID: 0}
 --- !u!61 &-653920554504065405
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -198,3 +200,16 @@ MonoBehaviour:
   fireRate: 0
   enemyMinFireRate: 2
   enemyMaxFireRate: 3
+--- !u!114 &-4126405511029804665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7821278737678340700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdb68019da28ca4ca9289450018c2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsWhenKilled: 250

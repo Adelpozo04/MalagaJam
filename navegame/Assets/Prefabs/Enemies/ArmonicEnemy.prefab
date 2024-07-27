@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -8931501427147361426}
   - component: {fileID: -8451209708777278161}
   - component: {fileID: 1983896579352724303}
+  - component: {fileID: 7886072239771517174}
   m_Layer: 0
   m_Name: ArmonicEnemy
   m_TagString: Untagged
@@ -134,6 +135,7 @@ MonoBehaviour:
   maxLife: 10
   currentLife: 0
   isPlayer: 0
+  leaderBoard_: {fileID: 0}
 --- !u!61 &-8451209708777278161
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -198,3 +200,16 @@ MonoBehaviour:
   fireRate: 0
   enemyMinFireRate: 2
   enemyMaxFireRate: 3
+--- !u!114 &7886072239771517174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7821278737678340700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdb68019da28ca4ca9289450018c2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsWhenKilled: 500

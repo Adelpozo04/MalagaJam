@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7964632361524273614}
   - component: {fileID: 4716754317132823993}
   - component: {fileID: -6359609124244526375}
+  - component: {fileID: -7813118114013149215}
   m_Layer: 0
   m_Name: Isometric Diamond
   m_TagString: Untagged
@@ -148,6 +149,7 @@ MonoBehaviour:
   maxLife: 10
   currentLife: 0
   isPlayer: 0
+  leaderBoard_: {fileID: 0}
 --- !u!61 &4716754317132823993
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -212,3 +214,16 @@ MonoBehaviour:
   fireRate: 0
   enemyMinFireRate: 2
   enemyMaxFireRate: 3
+--- !u!114 &-7813118114013149215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9021933544956269976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdb68019da28ca4ca9289450018c2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsWhenKilled: 750
