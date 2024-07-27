@@ -49,8 +49,13 @@ public class ControlHelper : MonoBehaviour
         }
         else if (controlName == "spacebar")
         {
-            textCmp.gameObject.SetActive(false);
-            image.gameObject.SetActive(true);
+            //textCmp.gameObject.SetActive(false);
+            //image.gameObject.SetActive(true);
+            textCmp.gameObject.SetActive(true);
+            image.gameObject.SetActive(false);
+
+            textCmp.text = "SPACE";
+            textCmp.fontSize = 68;
 
         }
         else if(controlName == "enter")
@@ -65,7 +70,7 @@ public class ControlHelper : MonoBehaviour
             textCmp.gameObject.SetActive(false);
             image.gameObject.SetActive(true);
 
-            image.sprite = SpritesContainer.Instance.leftClick;
+            image.sprite = SpritesContainer.Instance.leftArrow;
 
         }
         else if (controlName == "rightarrow")
@@ -73,7 +78,8 @@ public class ControlHelper : MonoBehaviour
             textCmp.gameObject.SetActive(false);
             image.gameObject.SetActive(true);
 
-            
+
+            image.sprite = SpritesContainer.Instance.rightArrow;
 
         }
         else if (controlName == "uparrow")
@@ -81,6 +87,7 @@ public class ControlHelper : MonoBehaviour
             textCmp.gameObject.SetActive(false);
             image.gameObject.SetActive(true);
 
+            image.sprite = SpritesContainer.Instance.upArrow;
 
         }
         else if (controlName == "downarrow")
@@ -88,12 +95,16 @@ public class ControlHelper : MonoBehaviour
             textCmp.gameObject.SetActive(false);
             image.gameObject.SetActive(true);
 
+            image.sprite = SpritesContainer.Instance.downArrow;
 
         }
         else
         {
             textCmp.text = controlName;
             textCmp.gameObject.SetActive(true);
+
+            textCmp.fontSize = 150;
+
         }
     }
 }

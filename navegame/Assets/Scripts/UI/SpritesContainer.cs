@@ -11,6 +11,11 @@ public class SpritesContainer : MonoBehaviour
     public Sprite rightClick;
     public Sprite middleClick;
 
+    public Sprite leftArrow;
+    public Sprite rightArrow;
+    public Sprite upArrow;
+    public Sprite downArrow;
+
 
     private void Awake()
     {
