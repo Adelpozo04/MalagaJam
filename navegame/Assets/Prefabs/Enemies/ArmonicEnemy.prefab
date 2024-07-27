@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -8451209708777278161}
   - component: {fileID: 1983896579352724303}
   - component: {fileID: 7886072239771517174}
+  - component: {fileID: 248464147946985637}
   m_Layer: 0
   m_Name: ArmonicEnemy
   m_TagString: Untagged
@@ -213,3 +214,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsWhenKilled: 500
+--- !u!114 &248464147946985637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7821278737678340700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1430decd76ccfd34e88782a94e9fe36b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  margenInterno: 2
