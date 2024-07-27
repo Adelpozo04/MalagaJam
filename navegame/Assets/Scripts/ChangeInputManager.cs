@@ -14,6 +14,7 @@ public class ChangeInputManager : MonoBehaviour
 
     [SerializeField] float fuelSpeendPerSecond;
 
+    [SerializeField] WarningChangeManager warningChangeManager;
     private int index = 0;
 
     public int getIndex() {  return index; }    
@@ -24,10 +25,17 @@ public class ChangeInputManager : MonoBehaviour
 
 
         if (index < fuelCostToChange.Count && FuelBarController.Instance.getFuelConsumed() >= fuelCostToChange[index]) {
+
+            warningChangeManager.StartTransition();
             index++;
-            inputController.changeActionMap();
-            controlHelperManager.updateControlHelpers(index);
+           
         }
 
+    }
+
+    public void updateInput()
+    {
+        inputController.changeActionMap();
+        controlHelperManager.updateControlHelpers(index);
     }
 }
