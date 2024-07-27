@@ -43,6 +43,23 @@ public class PlayerMovement : MonoBehaviour
     public void SetDirection()
     {
         _direction = _myInputTest.getDir().normalized;
+
+        if(_direction.x > 0 && _myRigidBody.position.x >= 8)
+        {
+            _direction.x = 0;
+        }
+        if (_direction.x < 0 && _myRigidBody.position.x <= -8)
+        {
+            _direction.x = 0;
+        }
+        if(_direction.y > 0 && _myRigidBody.position.y >= 4.5)
+        {
+            _direction.y = 0;
+        }
+        if (_direction.y < 0 && _myRigidBody.position.y <= -4.5)
+        {
+            _direction.y = 0;
+        }
     }
 
     // Start is called before the first frame update
@@ -63,11 +80,11 @@ public class PlayerMovement : MonoBehaviour
 
         //Debug.Log(_direction);
         
-        if (_direction.x <= 0 && myTr.position.x > 20)
+        if (_direction.x <= 0)
         {
             _myRigidBody.velocity = _direction * _rightSpeed;
         }
-        else if (myTr.position.x < 200)
+        else
         {
             _myRigidBody.velocity = _direction * _leftSpeed;
         }
