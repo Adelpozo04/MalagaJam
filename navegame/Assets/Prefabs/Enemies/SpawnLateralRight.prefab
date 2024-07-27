@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79176a91efa5b144a94ccb53da658036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime_: 1
-  diferenceSpawnRate_: 3
+  spawnTime_: 5
+  diferenceSpawnRate_: 15
   entityPrefab_:
   - {fileID: 7821278737678340700, guid: ecfcf7e9772a4ae49ace3d0c26e287f8, type: 3}
   - {fileID: 7821278737678340700, guid: a71b122b7236c1447906dc8137f19701, type: 3}
