@@ -4,13 +4,22 @@ using UnityEngine.UI;
 
 public class FuelBarController : MonoBehaviour
 {
-    [SerializeField] private int totalFuel;
-    [SerializeField] private int remainingFuel;
+    [SerializeField] private float maxFuel;
+    [SerializeField] private float remainingFuel;
     [SerializeField] private Vector2 innerBarProportions;
     
     [SerializeField] private GameObject _innerBar;
     private Image _innerImage;
-    
+
+
+    private float totalFuelConsumed;
+
+
+    public float getFuelConsumed()
+    {
+        return totalFuelConsumed;
+    }
+
     void Start()
     {
         //Inicializa la barra interior al tamaño y la posición adecuada
@@ -21,9 +30,9 @@ public class FuelBarController : MonoBehaviour
     public void AddFuel(int fuel)
     {
         remainingFuel += fuel;
-        if (remainingFuel >= totalFuel)
+        if (remainingFuel >= maxFuel)
         {
-            remainingFuel = totalFuel;
+            remainingFuel = maxFuel;
         }
         UpdateBar();
     }
@@ -31,6 +40,8 @@ public class FuelBarController : MonoBehaviour
     public void SubstractFuel(int fuel)
     {
         remainingFuel -= fuel;
+        totalFuelConsumed += fuel;
+
         if (remainingFuel <= 0)
         {
             //TODO: erminar partida
@@ -40,12 +51,13 @@ public class FuelBarController : MonoBehaviour
     
     public void RestartFuelBar()
     {
-        remainingFuel = totalFuel;
+        remainingFuel = maxFuel;
+        totalFuelConsumed = 0;
         UpdateBar();
     }
 
     private void UpdateBar()
     {
-        _innerImage.fillAmount = (float) remainingFuel / totalFuel;
+        _innerImage.fillAmount = (float) remainingFuel / maxFuel;
     }
 }
