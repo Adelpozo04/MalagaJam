@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class TutorialController : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class TutorialController : MonoBehaviour
     [SerializeField] private GameObject controls;
     [SerializeField] private TMP_Text title;
     [SerializeField] private TMP_Text desc;
+    [SerializeField] private Button button;
+    
     private int _stage;
     private void Start()
     {
@@ -32,14 +35,15 @@ public class TutorialController : MonoBehaviour
                 desc.text = "La cosa se pondrá fea si tus sistemas quedan dañados, procura evitar los proyectiles enemigos.";
                 break;
             case 1:
-                title.text = "Cuida de tu nave";
-                desc.text = "La cosa se pondrá fea si tus sistemas quedan dañados, procura evitar los proyectiles enemigos.";
+                title.text = "¡No te quedes sin gasolina!";
+                desc.text = "Perderás gasolina adicional si tus sistemas dañados vuelven a ser golpeados. Puedes conseguir gasolina matando enemigos.";
                 fuelBar.SetActive(true);
                 break;
             case 2:
-                title.text = "Cuida de tu nave";
-                desc.text = "La cosa se pondrá fea si tus sistemas quedan dañados, procura evitar los proyectiles enemigos.";
+                title.text = "¡Los sistemas de control están fallando!";
+                desc.text = "A medida que se consuma tu gasolina los controles cambiarán. Se te avisará con antelación. ¡Buena suerte!";
                 controls.SetActive(true);
+                button.text = "VOLVER";
                 break;
             case 3:
                 SceneManager.LoadScene(0);
