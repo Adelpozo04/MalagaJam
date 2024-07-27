@@ -10,6 +10,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
+    public void ExitApp()
+    {
+        if (Application.platform != RuntimePlatform.WebGLPlayer)
+            Application.Quit();
+    }
 
 
 }
