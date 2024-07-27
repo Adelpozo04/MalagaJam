@@ -180,28 +180,28 @@ public class InputTest : MonoBehaviour
 
             vec += new Vector2(-1, 0);
         }
-        else if (rightPressed)
+        if (rightPressed)
         {
             motor1.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, -90.0f);
             motor2.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, -90.0f);
 
             vec += new Vector2(1, 0);
         }
-        else if (upPressed)
+        if (upPressed)
         {
             motor1.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
             motor2.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
 
             vec += new Vector2(0, 1);
         }
-        else if (downPressed)
+        if (downPressed)
         {
             motor1.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, 180.0f);
             motor2.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, 180.0f);
 
             vec += new Vector2(0, -1);
         }
-        else
+        if (!inMove)
         {
             motor1.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
             motor2.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
