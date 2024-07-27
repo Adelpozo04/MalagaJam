@@ -71,7 +71,7 @@ public class BulletComponent : MonoBehaviour
 
             //si chocamos contra un objeto de otro grupo(player/enemigo)
 
-            if (lifeCmp != null)
+            if (lifeCmp != null && ownerPlayer)
             {
                 lifeCmp.reciveDamage(damage);
                 Destroy(gameObject);

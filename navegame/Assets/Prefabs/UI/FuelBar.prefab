@@ -53,6 +53,7 @@ MonoBehaviour:
   maxFuel: 1000
   remainingFuel: 12
   innerBarProportions: {x: 0.8, y: 0.9}
+  leaderBoard_: {fileID: 0}
   _innerBar: {fileID: 4199870877777847610}
 --- !u!1 &4199870877777847610
 GameObject:
