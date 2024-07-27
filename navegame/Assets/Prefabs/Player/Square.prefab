@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5309957693959512712}
   - component: {fileID: 352266355307112370}
   - component: {fileID: 3861683804280421407}
-  - component: {fileID: 2736811218980905783}
   - component: {fileID: 2492701209389082946}
   m_Layer: 6
   m_Name: Square
@@ -132,8 +131,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speedFactor: 4
   _percentageToReduce: 0
-  rightMotorHadDestroyed: 0
-  leftMotorHadDestroyed: 0
   _myInputTest: {fileID: 0}
 --- !u!114 &5309957693959512712
 MonoBehaviour:
@@ -147,6 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21ca2e55c37efd045aa580674b20ef60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fuelBar: {fileID: 0}
+  fuelDamage: 0
 --- !u!114 &352266355307112370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,7 +160,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxLife: 10
   currentLife: 0
-  isPlayer: 1
 --- !u!114 &3861683804280421407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,18 +179,6 @@ MonoBehaviour:
   fireRate: 0.5
   enemyMinFireRate: 0
   enemyMaxFireRate: 0
---- !u!114 &2736811218980905783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1882336512691016807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21ca2e55c37efd045aa580674b20ef60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2492701209389082946
 BoxCollider2D:
   m_ObjectHideFlags: 0
