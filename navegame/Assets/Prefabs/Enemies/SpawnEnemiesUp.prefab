@@ -50,7 +50,7 @@ MonoBehaviour:
   diferenceSpawnRate_: 3
   entityPrefab_:
   - {fileID: 7821278737678340700, guid: 2539caf2a9047684bbdb9b568069be9a, type: 3}
-  - {fileID: 9021933544956269976, guid: ef52d79f4ee71b147bae03f617c02293, type: 3}
+  - {fileID: 9021933544956269976, guid: ef20d6906050e944da35b0731caf545e, type: 3}
   - {fileID: 7821278737678340700, guid: 48feb5d3b674b81489ff383a458f1c8c, type: 3}
   propEntityAppear_:
   - 0.3
@@ -72,6 +72,7 @@ MonoBehaviour:
   dir_: {x: 1, y: 0, z: 0}
   changeDirSpeed_: 0
   maxLateralSpeed_: 1
+  lateralMovement: 0
 --- !u!114 &51502387819714615
 MonoBehaviour:
   m_ObjectHideFlags: 0

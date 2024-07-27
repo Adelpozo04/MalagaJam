@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 248464147946985637}
   - component: {fileID: -4219405912885898177}
   m_Layer: 0
-  m_Name: ArmonicEnemy
+  m_Name: UpPezGlobo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
