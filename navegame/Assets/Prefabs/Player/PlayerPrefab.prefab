@@ -5209,6 +5209,7 @@ GameObject:
   - component: {fileID: 5300851015999009430}
   - component: {fileID: 7062402916973280009}
   - component: {fileID: 2852014993876362762}
+  - component: {fileID: 368112708421021872}
   m_Layer: 6
   m_Name: Antena der
   m_TagString: Untagged
@@ -5342,6 +5343,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.73, y: 1.82}
   m_EdgeRadius: 0
+--- !u!95 &368112708421021872
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3742460800930144716}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 20f7324511478cc43a0ab019e0f35611, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4945967706285894167
 GameObject:
   m_ObjectHideFlags: 0
@@ -5520,6 +5542,7 @@ GameObject:
   - component: {fileID: 6070562709606287122}
   - component: {fileID: 3876822627343463441}
   - component: {fileID: 6793761924252487822}
+  - component: {fileID: 1343585316404183108}
   m_Layer: 6
   m_Name: Antena izq
   m_TagString: Untagged
@@ -5653,6 +5676,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.78, y: 1.95}
   m_EdgeRadius: 0
+--- !u!95 &1343585316404183108
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7642415005897757457}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6e3893cb0c1e1cc44a6c56886765bf8d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8678429295277912363
 GameObject:
   m_ObjectHideFlags: 0

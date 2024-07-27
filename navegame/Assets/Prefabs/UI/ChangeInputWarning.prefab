@@ -49,10 +49,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75601b7a7ffe16b4fbdc805d5d692718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transitionTime: 3
+  inGameTime: 0.5
+  visualContainer: {fileID: 8166431985513173777}
   changeInputManager: {fileID: 0}
   info: {fileID: 0}
   antiguo: {fileID: 4699536466486557321}
   nuevo: {fileID: 5584472923261782175}
+  countDown: {fileID: 6901967084957105340}
+  visualContainerControlHelper: {fileID: 0}
 --- !u!1 &438056046177332087
 GameObject:
   m_ObjectHideFlags: 0
@@ -4051,7 +4056,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8085326276997016033
 RectTransform:
   m_ObjectHideFlags: 0
