@@ -12,6 +12,7 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] private int winOverTime = 100;
     [SerializeField] private int timeWhenWin = 1;
     [SerializeField] private TMP_Text scoreText;
+    
     #endregion
 
     #region properties

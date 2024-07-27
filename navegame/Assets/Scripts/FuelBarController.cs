@@ -8,6 +8,7 @@ public class FuelBarController : MonoBehaviour
     [SerializeField] private float remainingFuel;
     [SerializeField] private Vector2 innerBarProportions;
     
+    [SerializeField] private LeaderBoard leaderBoard_;
     [SerializeField] private GameObject _innerBar;
     private Image _innerImage;
 
@@ -44,7 +45,9 @@ public class FuelBarController : MonoBehaviour
 
         if (remainingFuel <= 0)
         {
-            //TODO: erminar partida
+            //GAME OVER
+            leaderBoard_.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
+            //Cambiar a la escena menu
         }
         UpdateBar();
     }

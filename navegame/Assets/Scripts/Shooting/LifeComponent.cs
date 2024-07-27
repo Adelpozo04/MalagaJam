@@ -8,8 +8,6 @@ public class LifeComponent : MonoBehaviour
     [SerializeField] private float maxLife;
     [SerializeField] private float currentLife;
     
-    [SerializeField] private LeaderBoard leaderBoard_;
-
     // Start is called before the first frame update
     void Start()
     {
