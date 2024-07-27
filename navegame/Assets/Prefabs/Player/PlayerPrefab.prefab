@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 9034998393408042367}
   - component: {fileID: 8029184283809231418}
   - component: {fileID: 7352439005377921197}
+  - component: {fileID: 1034353487607647939}
   m_Layer: 6
   m_Name: Motor izq
   m_TagString: Untagged
@@ -177,6 +178,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   right: 0
+--- !u!95 &1034353487607647939
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379938310158364808}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 66b1918197b9fb949ad5d41358c8edc3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3629876955875036703
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,6 +211,7 @@ GameObject:
   - component: {fileID: 7611509931827304169}
   - component: {fileID: 9131370965822341400}
   - component: {fileID: 6968864076451200467}
+  - component: {fileID: 8421779498577479163}
   m_Layer: 6
   m_Name: Motor der
   m_TagString: Untagged
@@ -321,6 +344,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0323548, y: 3.0761535}
   m_EdgeRadius: 0
+--- !u!95 &8421779498577479163
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3629876955875036703}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 66b1918197b9fb949ad5d41358c8edc3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3742460800930144716
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,6 +461,7 @@ GameObject:
   - component: {fileID: 2038360339579444641}
   - component: {fileID: 7406898506020038507}
   - component: {fileID: 5241004980962072662}
+  - component: {fileID: 3643456315359227103}
   m_Layer: 6
   m_Name: Camara
   m_TagString: Untagged
@@ -549,6 +594,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0054376, y: 1.9720145}
   m_EdgeRadius: 0
+--- !u!95 &3643456315359227103
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4945967706285894167}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f40478bf64f7a2342add99cfca31c2c3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7642415005897757457
 GameObject:
   m_ObjectHideFlags: 0

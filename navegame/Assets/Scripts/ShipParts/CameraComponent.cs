@@ -20,6 +20,7 @@ public class CameraComponent : ShipComponent
     {
         if (compLife_ == 1)
         {
+            GetComponent<Animator>().SetTrigger("Destroy");
             //cameraInterference.SetFloat("_Clarity", 0.04f);
             effect.enabled = true;
         }
