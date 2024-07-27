@@ -18,12 +18,14 @@ public class MotorComponent : ShipComponent
     {
         if (compLife_ == 1)
         {
-            if(right)
+            if (right)
             {
+                GetComponent<Animator>().SetTrigger("Destroy");
                 plMove.destroyRightMotor();
             }
             else
             {
+                GetComponent<Animator>().SetTrigger("Destroy");
                 plMove.destroyLeftMotor();
             }
         }
