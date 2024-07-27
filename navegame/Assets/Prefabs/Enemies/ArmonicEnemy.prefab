@@ -136,6 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxLife: 10
   currentLife: 0
+  fuelPrefab: {fileID: 7848089265289364465, guid: 7a0b3ca32e846684ca7dc46bdff087d2, type: 3}
   dieClip: {fileID: 8300000, guid: c4f4851da7bb4724d90a33b8887bb1e5, type: 3}
 --- !u!61 &-8451209708777278161
 BoxCollider2D:
@@ -199,8 +200,8 @@ MonoBehaviour:
   damage: 10
   isPlayer: 0
   fireRate: 0
-  enemyMinFireRate: 0.5
-  enemyMaxFireRate: 1.5
+  enemyMinFireRate: 1
+  enemyMaxFireRate: 3
   shootClip: {fileID: 8300000, guid: 5bb25b7c946b4d445954df13b3c57289, type: 3}
 --- !u!114 &7886072239771517174
 MonoBehaviour:
