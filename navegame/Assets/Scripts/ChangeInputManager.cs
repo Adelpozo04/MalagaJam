@@ -16,7 +16,7 @@ public class ChangeInputManager : MonoBehaviour
 
     private int index = 0;
 
-
+    public int getIndex() {  return index; }    
     // Update is called once per frame
     void Update()
     {
