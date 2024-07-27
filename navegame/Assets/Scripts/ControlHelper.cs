@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class ControlHelper : MonoBehaviour
 {
-    private string controlName;
 
     [SerializeField] TMP_Text textCmp;
 
@@ -15,10 +14,9 @@ public class ControlHelper : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        setControl(controlName.ToLower());    
     }
 
-    public void setControl(string name)
+    public void setControl(string controlName)
     {
         if(controlName == "rightshift")
         {
