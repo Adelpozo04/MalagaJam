@@ -41,6 +41,15 @@ public class ControlHelperManager : MonoBehaviour
         shoot.setControl(mapActionsNamesList[index].shoot.ToLower(),scaleMultiplier);    
     }
 
+    public void updateControlHelpers(MapActionsNames names)
+    {
+        left.setControl(names.left.ToLower(), scaleMultiplier);
+        right.setControl(names.right.ToLower(), scaleMultiplier);
+        up.setControl(names.up.ToLower(), scaleMultiplier);
+        down.setControl(names.down.ToLower(), scaleMultiplier);
+        shoot.setControl(names.shoot.ToLower(), scaleMultiplier);
+    }
+
 
     private void Start()
     {
