@@ -76,6 +76,13 @@ public class BulletComponent : MonoBehaviour
                 lifeCmp.reciveDamage(damage);
                 Destroy(gameObject);
             }
+
+            var shipCmp = collision.gameObject.GetComponent<ShipComponent>();
+            if(shipCmp != null && !ownerPlayer)
+            {
+                shipCmp.GotHit();
+                Destroy(gameObject);
+            }
         }
     }
 
