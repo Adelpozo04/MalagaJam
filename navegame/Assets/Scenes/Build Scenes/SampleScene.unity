@@ -591,6 +591,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 2930806854668758873, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
+      propertyPath: leaderBoard_
+      value: 
+      objectReference: {fileID: 361218874}
     - target: {fileID: 7209875352762749638, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.75
