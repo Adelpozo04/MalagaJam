@@ -345,6 +345,10 @@ PrefabInstance:
       value: FuelBar
       objectReference: {fileID: 0}
     - target: {fileID: 6532813104589903564, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
+      propertyPath: maxFuel
+      value: 1250
+      objectReference: {fileID: 0}
+    - target: {fileID: 6532813104589903564, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
       propertyPath: leaderBoard_
       value: 
       objectReference: {fileID: 361218874}
@@ -1269,6 +1273,18 @@ PrefabInstance:
       propertyPath: warningChangeManager
       value: 
       objectReference: {fileID: 6609589965891871467}
+    - target: {fileID: 3896167890588078628, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
+      propertyPath: fuelCostToChange.Array.data[2]
+      value: 1450
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896167890588078628, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
+      propertyPath: fuelCostToChange.Array.data[3]
+      value: 2250
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896167890588078628, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
+      propertyPath: fuelCostToChange.Array.data[4]
+      value: 3500
+      objectReference: {fileID: 0}
     - target: {fileID: 5829180337570827065, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
       propertyPath: m_ActionEvents.Array.size
       value: 42

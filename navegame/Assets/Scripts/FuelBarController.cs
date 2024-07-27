@@ -42,7 +42,7 @@ public class FuelBarController : MonoBehaviour
         RestartFuelBar();
     }
 
-    public void AddFuel(int fuel)
+    public void AddFuel(float fuel)
     {
         remainingFuel += fuel;
         if (remainingFuel >= maxFuel)
