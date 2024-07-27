@@ -8,7 +8,11 @@ public class SFXManager : MonoBehaviour
 
     [SerializeField] private AudioSource soundFXObject; 
     [SerializeField] private AudioSource soundFXObjectCont;
+
+    [SerializeField] private GameObject motorStartObject;
     [SerializeField] private GameObject motorContObject;
+
+    [SerializeField] private Transform playerTransform;
 
 
     [SerializeField] private AudioClip[] motorAudio = new AudioClip [3];
@@ -18,10 +22,7 @@ public class SFXManager : MonoBehaviour
         if(instance != null)
             Destroy(this);
         else
-        {
             instance = this;
-            DontDestroyOnLoad(this);
-        }
     }
 
     public void playSFXClip(AudioClip audioClip, Transform spawnTransform, float volume)
@@ -46,17 +47,20 @@ public class SFXManager : MonoBehaviour
 
     }
 
-    public void startMotorsClip(Transform spawnTransform, float volume)
+    public void startMotorsClip()
     {
+        if(motorContObject != null || motorStartObject != null)
+            return;
+
         //Al principio
         //spawn the game object
-        AudioSource audioSource = Instantiate(soundFXObject, spawnTransform.position, Quaternion.identity);
+        AudioSource audioSource = Instantiate(soundFXObject, playerTransform.position, Quaternion.identity);
 
         //assign audio clip 
         audioSource.clip = motorAudio[0];
 
         //assign volume
-        audioSource.volume = volume;
+        audioSource.volume = 1f;
 
         //play clip
         audioSource.Play();
@@ -65,36 +69,60 @@ public class SFXManager : MonoBehaviour
         float clipLenght = audioSource.clip.length;
 
         Invoke("contAudio", clipLenght);
-
-        //destruye tras sonar
-        Destroy(audioSource.gameObject, clipLenght);
+        motorStartObject = audioSource.gameObject;
     }
 
-    public void endMotorsClip(Transform spawnTransform, float volume)
+    public void endMotorsClip()
     {
-        if(motorContObject != null)
+
+        if (motorStartObject != null)
+        {
+            Destroy(motorStartObject);
+            motorStartObject = null;
+        }
+
+        if (motorContObject != null)
+        {
             Destroy(motorContObject);
+            motorContObject = null;
+        }
 
-        playSFXClip(motorAudio[2], motorContObject.transform, volume);
+        playSFXClip(motorAudio[2], playerTransform.transform, 1f);
     }
 
-    private void contAudio(Transform spawnTransform, float volume)
+    private void contAudio()
     {
+
+
+        if (motorStartObject == null)
+            return;
+
+        if (motorStartObject != null)
+        {
+            Destroy(motorStartObject);
+            motorStartObject = null;
+        }
+
+        if (motorContObject != null)
+        {
+            Destroy(motorContObject);
+            motorContObject = null;
+        }
 
         //spawn the game object
-        AudioSource audioSource = Instantiate(soundFXObjectCont, spawnTransform.position, Quaternion.identity);
+        AudioSource audioSource = Instantiate(soundFXObjectCont, playerTransform.position, Quaternion.identity);
 
         //assign audio clip 
-        audioSource.clip = motorAudio[0];
+        audioSource.clip = motorAudio[1];
 
         //assign volume
-        audioSource.volume = volume;
+        audioSource.volume = 0.5f;
 
         //play clip
         audioSource.Play();
 
         //duración del clip
-        float clipLenght2 = audioSource.clip.length;
+        //float clipLenght1= audioSource.clip.length;
 
         motorContObject = audioSource.gameObject;
     }

@@ -22,9 +22,12 @@ public class InputTest : MonoBehaviour
     private bool upPressed = false;
     private bool downPressed = false;
     private bool shootPressed = false;
+    private bool inMove = false;
 
     public UnityEvent startShoot;
     public UnityEvent endShoot;
+    public UnityEvent startMove;
+    public UnityEvent endMove;
 
     // Start is called before the first frame update
     void Start()
@@ -44,11 +47,23 @@ public class InputTest : MonoBehaviour
 
     public void moveLeft(InputAction.CallbackContext context)
     {
-        if(context.canceled) leftPressed = false;
+        if (context.canceled)
+        {
+            leftPressed = false;
+            endMove.Invoke();
+            inMove = false;
+        }
 
         if(!context.started) return;
 
+        if (context.started && !inMove)
+        {
+            startMove.Invoke();
+            inMove = true;
+        }
+
         leftPressed = true;
+
 
         //print("leftPressed");
 
@@ -61,30 +76,64 @@ public class InputTest : MonoBehaviour
     }
     public void moveRight(InputAction.CallbackContext context)
     {
-        if (context.canceled) rightPressed = false;
+        if (context.canceled)
+        {
+            rightPressed = false;
+            endMove.Invoke();
+            inMove = false;
+        }
 
         if (!context.started) return;
-        rightPressed = true;
 
+        if (context.started && !inMove)
+        {
+            startMove.Invoke();
+            inMove = true;
+        }
+
+        rightPressed = true;;
         //print("rightPressed");
     }
     public void moveUp(InputAction.CallbackContext context)
     {
-        if (context.canceled) upPressed = false;
+        if (context.canceled)
+        {
+            upPressed = false;
+            endMove.Invoke();
+            inMove = false;
+        }
 
         if (!context.started) return;
 
-        upPressed = true;
+
+        if (context.started && !inMove)
+        {
+            startMove.Invoke();
+            inMove = true;
+        }
+
+        upPressed = true; 
 
         //print("upPressed");
     }
     public void moveDown(InputAction.CallbackContext context)
     {
-        if (context.canceled) downPressed = false;
+        if (context.canceled)
+        {
+            downPressed = false;
+            endMove.Invoke();
+            inMove = false;
+        }
 
         if (!context.started) return;
 
-        downPressed = true; 
+        if (context.started && !inMove)
+        {
+            startMove.Invoke();
+            inMove = true;
+        }
+
+        downPressed = true;
 
         //print("downPressed");
     }
@@ -140,5 +189,4 @@ public class InputTest : MonoBehaviour
 
         SwitchActionMap(currentActionMapName);
     }
-
 }
