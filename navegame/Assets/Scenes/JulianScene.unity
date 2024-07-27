@@ -246,6 +246,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInput: {fileID: 1576596406}
   actionMapBaseName: Action
+  startShoot:
+    m_PersistentCalls:
+      m_Calls: []
+  endShoot:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1576596406
 MonoBehaviour:
   m_ObjectHideFlags: 0
