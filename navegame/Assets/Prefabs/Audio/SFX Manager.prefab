@@ -45,3 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundFXObject: {fileID: 7586548667367372077, guid: 3f9647069adc63d4a80cb5f7fb05e500, type: 3}
+  soundFXObjectCont: {fileID: 5470268686113476841, guid: 1835e0d73236e244f994a230d422299a, type: 3}
+  motorStartObject: {fileID: 0}
+  motorContObject: {fileID: 0}
+  playerTransform: {fileID: 0}
+  motorAudio:
+  - {fileID: 8300000, guid: ead789f32239a3a438e4fa77779b328b, type: 3}
+  - {fileID: 8300000, guid: cdefb031d8fe6b140a74f60060c7285b, type: 3}
+  - {fileID: 8300000, guid: 4789493e69d03d54ba369cc0abff6ff7, type: 3}
