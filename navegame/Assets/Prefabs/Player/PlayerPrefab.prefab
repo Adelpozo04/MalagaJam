@@ -613,6 +613,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3861683804280421407, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
+      propertyPath: shootClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5bb25b7c946b4d445954df13b3c57289, type: 3}
     - target: {fileID: 5273627799913792741, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -701,6 +705,18 @@ PrefabInstance:
     - target: {fileID: 892576024810056061, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492774282213888956, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492774282213888956, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[30].m_ActionId
+      value: 3e5c99dc-c9af-45de-9584-ebf48f96570b
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492774282213888956, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[30].m_ActionName
+      value: Action1/Pause [/Keyboard/escape]
       objectReference: {fileID: 0}
     - target: {fileID: 6239384511561350220, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
       propertyPath: m_Name
