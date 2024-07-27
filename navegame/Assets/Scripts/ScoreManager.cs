@@ -25,6 +25,12 @@ public class ScoreManager : MonoBehaviour
     static private ScoreManager instance;
     static public ScoreManager Instance { get { return instance; } }
 
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     private void Start()
     {
         scAnim = GetComponent<SizeChangeAnim>();
