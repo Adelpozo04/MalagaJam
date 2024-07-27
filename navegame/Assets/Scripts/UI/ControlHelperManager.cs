@@ -53,6 +53,7 @@ public class ControlHelperManager : MonoBehaviour
 
     private void Start()
     {
+        if (mapActionsNamesList.Count == 0) return;
         updateControlHelpers(0);    
     }
 }
