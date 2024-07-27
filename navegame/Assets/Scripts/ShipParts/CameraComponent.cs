@@ -33,6 +33,7 @@ public class CameraComponent : ShipComponent
     void Start()
     {
         compLife_ = 2;
+        cameraInterference.SetFloat("_Clarity", 0f);
     }
 
     // Update is called once per frame
