@@ -163,6 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeAlive: 10
+  fuelAmount: 60
 --- !u!114 &5205102643065133011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,3 +180,4 @@ MonoBehaviour:
   dir_: {x: 0, y: -1, z: 0}
   changeDirSpeed_: 0
   maxLateralSpeed_: 0.2
+  lateralMovement: 0

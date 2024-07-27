@@ -16,6 +16,9 @@ public class FuelBlobComponent : MonoBehaviour
     #region methods
     #endregion
 
+
+    [SerializeField] private float fuelAmount = 50;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +44,7 @@ public class FuelBlobComponent : MonoBehaviour
 
             if(tumadre != null)
             {
-                tumadre.sufferDamage(-50);
+                tumadre.addFuel(fuelAmount);
                 Destroy(gameObject);
             }
         }
