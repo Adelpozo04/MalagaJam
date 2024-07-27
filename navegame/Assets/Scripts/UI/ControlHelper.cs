@@ -16,7 +16,7 @@ public class ControlHelper : MonoBehaviour
     {
     }
 
-    public void setControl(string controlName)
+    public void setControl(string controlName,float scaleMultiplier)
     {
         if(controlName == "rightshift")
         {
@@ -124,5 +124,7 @@ public class ControlHelper : MonoBehaviour
             textCmp.fontSize = 150;
 
         }
+
+        textCmp.fontSize = textCmp.fontSize * scaleMultiplier;
     }
 }
