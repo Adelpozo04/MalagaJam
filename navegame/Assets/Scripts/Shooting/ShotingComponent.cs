@@ -27,6 +27,8 @@ public class ShotingComponent : MonoBehaviour
 
     private bool shooting = false;
 
+    [SerializeField] AudioClip shootClip;
+
     private void Start()
     {
         if(!isPlayer)
@@ -37,6 +39,7 @@ public class ShotingComponent : MonoBehaviour
     private void ShootBullet()
     {
         GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        SFXManager.instance.playSFXClip(shootClip, transform, 1f);
 
         var bulletCmp = bullet.GetComponent<BulletComponent>();
 
