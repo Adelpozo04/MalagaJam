@@ -7,7 +7,7 @@ using TMPro;
 public class LeaderBoard : MonoBehaviour
 {
 
-    string leaderboardID = "23642";
+    string leaderboardID = "23663";
 
     public TextMeshProUGUI playerNames;
     public TextMeshProUGUI playerScores;
