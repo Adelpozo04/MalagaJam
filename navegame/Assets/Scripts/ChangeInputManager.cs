@@ -5,8 +5,9 @@ using UnityEngine;
 public class ChangeInputManager : MonoBehaviour
 {
 
-    public List<float> fuelCostToChange = new List<float>();    
+    public List<float> fuelCostToChange = new List<float>();
 
+    [SerializeField] private ControlHelperManager controlHelperManager;
 
     
     [SerializeField] InputTest inputController;
@@ -25,6 +26,7 @@ public class ChangeInputManager : MonoBehaviour
         if (index < fuelCostToChange.Count && FuelBarController.Instance.getFuelConsumed() >= fuelCostToChange[index]) {
             index++;
             inputController.changeActionMap();
+            controlHelperManager.updateControlHelpers(index);
         }
 
     }

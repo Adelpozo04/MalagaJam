@@ -50,18 +50,32 @@ public class ControlHelper : MonoBehaviour
         }
         else if (controlName == "leftarrow")
         {
+            textCmp.gameObject.SetActive(false);
+            image.gameObject.SetActive(true);
+
+            image.sprite = SpritesContainer.Instance.leftClick;
 
         }
         else if (controlName == "rightarrow")
         {
+            textCmp.gameObject.SetActive(false);
+            image.gameObject.SetActive(true);
+
+            
 
         }
         else if (controlName == "uparrow")
         {
+            textCmp.gameObject.SetActive(false);
+            image.gameObject.SetActive(true);
+
 
         }
         else if (controlName == "downarrow")
         {
+            textCmp.gameObject.SetActive(false);
+            image.gameObject.SetActive(true);
+
 
         }
         else

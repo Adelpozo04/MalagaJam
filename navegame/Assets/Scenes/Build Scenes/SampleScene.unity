@@ -953,6 +953,53 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1629117699
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1629117701}
+  - component: {fileID: 1629117700}
+  m_Layer: 0
+  m_Name: Sprites Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1629117700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629117699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df157288746f77943b4ade442617dfcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftClick: {fileID: 21300000, guid: 351610d38b118404badc79641d21f75f, type: 3}
+  rightClick: {fileID: 21300000, guid: 6335c919f95242d4e8e466ee9064d274, type: 3}
+  middleClick: {fileID: 21300000, guid: 7a9fc9c81ba1de2458bb8e4bffe5a138, type: 3}
+--- !u!4 &1629117701
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629117699}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 439.9853, y: 212.7468, z: -3.488201}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1827248884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -977,6 +1024,14 @@ PrefabInstance:
       propertyPath: fuelBarController
       value: 
       objectReference: {fileID: 314628235}
+    - target: {fileID: 3896167890588078628, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
+      propertyPath: fuelSpeendPerSecond
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896167890588078628, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
+      propertyPath: controlHelperManager
+      value: 
+      objectReference: {fileID: 1913907511}
     - target: {fileID: 5829180337570827065, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
       propertyPath: m_ActionEvents.Array.size
       value: 36
@@ -1507,6 +1562,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4349631569840974237, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6335c919f95242d4e8e466ee9064d274, type: 3}
     - target: {fileID: 6025105276746996932, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
       propertyPath: m_fontSize
       value: 60
@@ -1657,6 +1716,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7940113912674763272, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
   m_PrefabInstance: {fileID: 1913907509}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1913907511 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1057032953029929379, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+  m_PrefabInstance: {fileID: 1913907509}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e000c78b0e8afc41a7c50b4b17a634d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6609589965891871463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1774,3 +1844,4 @@ SceneRoots:
   - {fileID: 361218875}
   - {fileID: 539665935}
   - {fileID: 752295387}
+  - {fileID: 1629117701}
