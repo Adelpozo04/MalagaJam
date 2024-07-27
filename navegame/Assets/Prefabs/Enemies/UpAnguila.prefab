@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: -4126405511029804665}
   - component: {fileID: 8928893096824373601}
   m_Layer: 0
-  m_Name: LinealEnemy
+  m_Name: UpAnguila
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
