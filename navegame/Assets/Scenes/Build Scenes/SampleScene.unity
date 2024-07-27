@@ -2131,14 +2131,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChangeInputWarning
       objectReference: {fileID: 0}
-    - target: {fileID: 240049332316519245, guid: cb79600faeaf870469c37b661bb7dcec, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7973618922817444922, guid: cb79600faeaf870469c37b661bb7dcec, type: 3}
-      propertyPath: m_Name
-      value: Nuevos Controles
-      objectReference: {fileID: 0}
     - target: {fileID: 8789860049675894607, guid: cb79600faeaf870469c37b661bb7dcec, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
