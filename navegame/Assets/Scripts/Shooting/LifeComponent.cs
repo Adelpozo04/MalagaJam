@@ -30,7 +30,16 @@ public class LifeComponent : MonoBehaviour
         if(currentLife <= 0)
         {
 
+            if (isPlayer)
+            {
+                leaderBoard_.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
+            }
+            else
+            {
+                int p = GetComponent<ScoreAmound>().GetPoints();
 
+                ScoreManager.Instance.AddScore(p);
+            }
 
             Destroy(gameObject);    
         }
