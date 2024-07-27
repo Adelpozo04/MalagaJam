@@ -1,6 +1,7 @@
 
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class FuelBarController : MonoBehaviour
 {
@@ -58,9 +59,7 @@ public class FuelBarController : MonoBehaviour
 
         if (remainingFuel <= 0)
         {
-            //GAME OVER
-            leaderBoard_.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
-            //Cambiar a la escena menu
+            GameOver();
         }
         UpdateBar();
     }
@@ -75,5 +74,12 @@ public class FuelBarController : MonoBehaviour
     private void UpdateBar()
     {
         _innerImage.fillAmount = (float) remainingFuel / maxFuel;
+    }
+
+    void GameOver()
+    {
+        //Descomentar cuando esté funcionando el leaderBoard
+        leaderBoard_.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
+        SceneManager.LoadScene("MenuPrincipal");
     }
 }
