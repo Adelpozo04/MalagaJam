@@ -4,6 +4,10 @@ using UnityEngine.UI;
 
 public class FuelBarController : MonoBehaviour
 {
+
+    public static FuelBarController Instance ;
+
+
     [SerializeField] private float maxFuel;
     [SerializeField] private float remainingFuel;
     [SerializeField] private Vector2 innerBarProportions;
@@ -20,6 +24,15 @@ public class FuelBarController : MonoBehaviour
         return totalFuelConsumed;
     }
 
+    private void Awake()
+    {
+        if(Instance == null)
+            Instance = this;
+        else
+        {
+            Destroy(this);
+        }
+    }
     void Start()
     {
         //Inicializa la barra interior al tamaño y la posición adecuada
