@@ -222,6 +222,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FuelBar
       objectReference: {fileID: 0}
+    - target: {fileID: 6532813104589903564, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
+      propertyPath: maxFuel
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6532813104589903564, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
+      propertyPath: leaderBoard_
+      value: 
+      objectReference: {fileID: 361218874}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
