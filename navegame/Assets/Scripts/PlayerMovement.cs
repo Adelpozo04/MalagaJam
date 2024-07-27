@@ -25,13 +25,17 @@ public class PlayerMovement : MonoBehaviour
     //direcci�n de movimiento
     private Vector2 _direction;
 
+    [SerializeField] AudioClip _destroyMotorClip;
+
     public void destroyRightMotor()
     {
         _rightSpeed = _speedFactor - (_speedFactor * _percentageToReduce) / 100;
+        SFXManager.instance.playSFXClip(_destroyMotorClip, transform, 1f);
     }    
 
     public void destroyLeftMotor() { 
         _leftSpeed = _speedFactor - (_speedFactor * _percentageToReduce) / 100;
+        SFXManager.instance.playSFXClip(_destroyMotorClip, transform, 1f);
     }
 
     public void SetDirection()

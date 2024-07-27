@@ -10,11 +10,14 @@ public class CameraComponent : ShipComponent
     #region references
     [SerializeField]
     private Material cameraInterference;
+
+    [SerializeField] private AudioClip destroyClip;
     #endregion
 
     #region methods
     override public void GotHit()
     {
+
         Debug.Log(compLife_);
         if(compLife_ == 2) {
             cameraInterference.SetFloat("_Clarity", 0.01f);
@@ -28,6 +31,7 @@ public class CameraComponent : ShipComponent
             myShipMng_.sufferDamage((compLife_ - 1) * -10);
         }
         compLife_--;
+        SFXManager.instance.playSFXClip(destroyClip, transform, 1f);
     }
     #endregion
 

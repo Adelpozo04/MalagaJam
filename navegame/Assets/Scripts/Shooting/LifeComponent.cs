@@ -10,7 +10,7 @@ public class LifeComponent : MonoBehaviour
 
 
 
-    [SerializeField] AudioClip dieClip;
+    [SerializeField] private AudioClip dieClip;
 
     // Start is called before the first frame update
     void Start()
