@@ -232,6 +232,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1717295558792724806, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
   m_PrefabInstance: {fileID: 314628233}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &314628235 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6532813104589903564, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
+  m_PrefabInstance: {fileID: 314628233}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89a4f3f76eb52eb48be48c2c766b25b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &361218873
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,6 +602,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 1233079725229833521, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
+      propertyPath: maxActionMaps
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7209875352762749638, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.75
@@ -642,8 +657,48 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4047150439441327305, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1827248887}
   m_SourcePrefab: {fileID: 100100000, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
+--- !u!114 &1827248885 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1233079725229833521, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
+  m_PrefabInstance: {fileID: 1827248884}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827248886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d115c2229ec918845bc2314431f8015d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1827248886 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4047150439441327305, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
+  m_PrefabInstance: {fileID: 1827248884}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1827248887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827248886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d40931f73d252054ebf73a4d17620b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuelCostToChange:
+  - 250
+  - 750
+  - 1250
+  - 2000
+  - 3000
+  fuelBarController: {fileID: 314628235}
+  inputController: {fileID: 1827248885}
+  fuelSpeendPerSecond: 25
 --- !u!1001 &1831258218
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -37,7 +37,7 @@ public class FuelBarController : MonoBehaviour
         UpdateBar();
     }
 
-    public void SubstractFuel(int fuel)
+    public void SubstractFuel(float fuel)
     {
         remainingFuel -= fuel;
         totalFuelConsumed += fuel;

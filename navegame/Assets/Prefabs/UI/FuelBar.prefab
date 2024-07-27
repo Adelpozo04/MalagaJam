@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89a4f3f76eb52eb48be48c2c766b25b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxFuel: 100
+  maxFuel: 1000
   remainingFuel: 12
   innerBarProportions: {x: 0.8, y: 0.9}
   _innerBar: {fileID: 4199870877777847610}
