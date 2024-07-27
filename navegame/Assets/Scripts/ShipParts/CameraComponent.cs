@@ -15,17 +15,19 @@ public class CameraComponent : ShipComponent
     #region methods
     override public void GotHit()
     {
+        Debug.Log(compLife_);
         if(compLife_ == 2) {
             cameraInterference.SetFloat("_Clarity", 0.01f);
         }
         else if (compLife_ == 1)
         {
-            cameraInterference.SetFloat("_Clarity", 0.03f);
+            cameraInterference.SetFloat("_Clarity", 0.04f);
         }
         else
         {
             myShipMng_.sufferDamage();
         }
+        compLife_--;
     }
     #endregion
 
@@ -34,7 +36,9 @@ public class CameraComponent : ShipComponent
     {
         compLife_ = 2;
         cameraInterference.SetFloat("_Clarity", 0f);
+        myShipMng_ = this.transform.parent.gameObject.GetComponent<ShipManager>();
     }
+
 
     // Update is called once per frame
     void Update()

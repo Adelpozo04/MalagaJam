@@ -46,11 +46,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79176a91efa5b144a94ccb53da658036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime_: 5
+  spawnTime_: 2
+  diferenceSpawnRate_: 4
   entityPrefab_:
   - {fileID: 7821278737678340700, guid: 2539caf2a9047684bbdb9b568069be9a, type: 3}
   - {fileID: 9021933544956269976, guid: ef52d79f4ee71b147bae03f617c02293, type: 3}
   - {fileID: 7821278737678340700, guid: 48feb5d3b674b81489ff383a458f1c8c, type: 3}
+  propEntityAppear_:
+  - 0.5
+  - 0.25
+  - 0.25
 --- !u!114 &2975910371430159609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,3 +84,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1430decd76ccfd34e88782a94e9fe36b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  margenInterno: 0
