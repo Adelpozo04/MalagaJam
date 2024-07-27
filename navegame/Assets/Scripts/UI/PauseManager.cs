@@ -10,12 +10,15 @@ public class PauseManager : MonoBehaviour
 
     private bool paused = false;
 
+    float lastTimeScale;
     public void switchPause()
     {
+        if(!paused) { lastTimeScale = Time.timeScale; } 
+
         paused = !paused;
         visualContainer.SetActive(!visualContainer.activeSelf);
 
-        Time.timeScale = paused ? 0.0f : 1.0f;
+        Time.timeScale = paused ? 0.0f : lastTimeScale;
     }
     
 
