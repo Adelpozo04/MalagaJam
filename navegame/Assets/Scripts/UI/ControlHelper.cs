@@ -35,16 +35,25 @@ public class ControlHelper : MonoBehaviour
             textCmp.gameObject.SetActive(false);
             image.gameObject.SetActive(true);
 
+            image.sprite = SpritesContainer.Instance.leftClick;
+
+
         }
         else if (controlName == "rightclick")
         {
             textCmp.gameObject.SetActive(false);
             image.gameObject.SetActive(true);
+
+            image.sprite = SpritesContainer.Instance.rightClick;
+
         }
         else if (controlName == "middleclick")
         {
             textCmp.gameObject.SetActive(false);
             image.gameObject.SetActive(true);
+
+            image.sprite = SpritesContainer.Instance.middleClick;
+
 
         }
         else if (controlName == "shift")
@@ -107,6 +116,8 @@ public class ControlHelper : MonoBehaviour
         }
         else
         {
+            image.gameObject.SetActive(false);
+
             textCmp.text = controlName;
             textCmp.gameObject.SetActive(true);
 

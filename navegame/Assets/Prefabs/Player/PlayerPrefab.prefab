@@ -10374,6 +10374,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1233079725229833521}
     - target: {fileID: 633110655414412441, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
+      propertyPath: _speedFactor
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 633110655414412441, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
       propertyPath: _destroyMotorClip
       value: 
       objectReference: {fileID: 8300000, guid: c4f4851da7bb4724d90a33b8887bb1e5, type: 3}
@@ -10464,6 +10468,10 @@ PrefabInstance:
     - target: {fileID: 3251317684296047964, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861683804280421407, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
+      propertyPath: velocity
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861683804280421407, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
       propertyPath: shootClip
