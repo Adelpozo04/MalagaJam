@@ -8,6 +8,8 @@ public class InputTest : MonoBehaviour
 {
 
 
+    [SerializeField] private GameObject motor1;
+    [SerializeField] private GameObject motor2;
     public PlayerInput playerInput;
 
     private int currentActionMap;
@@ -171,10 +173,39 @@ public class InputTest : MonoBehaviour
     {
         var vec = new Vector2(0, 0);
 
-        if (leftPressed) vec += new Vector2(-1, 0);
-        if (rightPressed) vec += new Vector2(1, 0);
-        if (upPressed) vec += new Vector2(0,1);
-        if (downPressed) vec += new Vector2(0, -1);
+        if (leftPressed)
+        {
+            motor1.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, 90.0f);
+            motor2.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, 90.0f);
+
+            vec += new Vector2(-1, 0);
+        }
+        if (rightPressed)
+        {
+            motor1.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, -90.0f);
+            motor2.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, -90.0f);
+
+            vec += new Vector2(1, 0);
+        }
+        if (upPressed)
+        {
+            motor1.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
+            motor2.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
+
+            vec += new Vector2(0, 1);
+        }
+        if (downPressed)
+        {
+            motor1.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, 180.0f);
+            motor2.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, 180.0f);
+
+            vec += new Vector2(0, -1);
+        }
+        if (!inMove)
+        {
+            motor1.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
+            motor2.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
+        }
 
         return vec;
     }

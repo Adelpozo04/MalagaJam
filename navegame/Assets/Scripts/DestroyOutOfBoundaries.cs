@@ -9,6 +9,10 @@ public class DestroyOutOfBoundaries : MonoBehaviour
 
     [SerializeField] private bool outOfFloor = true;
 
+    [SerializeField] private bool outOfRight = false;
+
+    [SerializeField] private bool outOfLeft = false;
+
     [SerializeField] private float margen = 8;
 
     #endregion
@@ -36,6 +40,28 @@ public class DestroyOutOfBoundaries : MonoBehaviour
         {
 
             if (Camera.main.ViewportToWorldPoint(new Vector3(0, 1, 0)).y <= transform.position.y - margen)
+            {
+
+                Destroy(gameObject);
+
+            }
+
+        }
+
+        if (outOfLeft)
+        {
+            if (Camera.main.ViewportToWorldPoint(new Vector3(0, 0f, 0)).x >= transform.position.x + margen)
+            {
+
+                Destroy(gameObject);
+
+            }
+        }
+
+        if (outOfRight)
+        {
+
+            if (Camera.main.ViewportToWorldPoint(new Vector3(0, 1, 0)).x <= transform.position.x - margen)
             {
 
                 Destroy(gameObject);

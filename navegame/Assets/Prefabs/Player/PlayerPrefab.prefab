@@ -5207,6 +5207,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3919664998549386946}
   - component: {fileID: 5300851015999009430}
+  - component: {fileID: 7062402916973280009}
+  - component: {fileID: 2852014993876362762}
   m_Layer: 6
   m_Name: Antena der
   m_TagString: Untagged
@@ -5281,6 +5283,65 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7062402916973280009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3742460800930144716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78e8d389d2cf8124088803b4e36b3aab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRight: 1
+  destroyClip: {fileID: 8300000, guid: 6a7a60d5778c9174ba015e8e9da82208, type: 3}
+--- !u!61 &2852014993876362762
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3742460800930144716}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.73, y: 1.82}
+    newSize: {x: 45.01099, y: 40}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.73, y: 1.82}
+  m_EdgeRadius: 0
 --- !u!1 &4945967706285894167
 GameObject:
   m_ObjectHideFlags: 0
@@ -5457,6 +5518,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3333524930776952607}
   - component: {fileID: 6070562709606287122}
+  - component: {fileID: 3876822627343463441}
+  - component: {fileID: 6793761924252487822}
   m_Layer: 6
   m_Name: Antena izq
   m_TagString: Untagged
@@ -5531,6 +5594,65 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3876822627343463441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7642415005897757457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78e8d389d2cf8124088803b4e36b3aab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRight: 0
+  destroyClip: {fileID: 8300000, guid: 6a7a60d5778c9174ba015e8e9da82208, type: 3}
+--- !u!61 &6793761924252487822
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7642415005897757457}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.78, y: 1.95}
+    newSize: {x: 45.01099, y: 40}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.78, y: 1.95}
+  m_EdgeRadius: 0
 --- !u!1 &8678429295277912363
 GameObject:
   m_ObjectHideFlags: 0
@@ -10670,6 +10792,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: InputTest
       objectReference: {fileID: 0}
+    - target: {fileID: 9196391928638743988, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
+      propertyPath: motor1
+      value: 
+      objectReference: {fileID: 379938310158364808}
+    - target: {fileID: 9196391928638743988, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
+      propertyPath: motor2
+      value: 
+      objectReference: {fileID: 3629876955875036703}
     - target: {fileID: 9196391928638743988, guid: ec8e44b70d6263f4b877a0f7e47521cb, type: 3}
       propertyPath: endMove.m_PersistentCalls.m_Calls.Array.size
       value: 0

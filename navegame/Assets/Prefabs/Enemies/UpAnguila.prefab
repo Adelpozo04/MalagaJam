@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: -4126405511029804665}
   - component: {fileID: 8928893096824373601}
   m_Layer: 0
-  m_Name: LinealEnemy
+  m_Name: UpAnguila
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
   maxLife: 10
   currentLife: 0
   fuelPrefab: {fileID: 7848089265289364465, guid: 7a0b3ca32e846684ca7dc46bdff087d2, type: 3}
-  dieClip: {fileID: 8300000, guid: c4f4851da7bb4724d90a33b8887bb1e5, type: 3}
+  dieClip: {fileID: 8300000, guid: 45882d27cc48b434ca284a2b8223fc35, type: 3}
 --- !u!61 &-653920554504065405
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -201,7 +201,7 @@ MonoBehaviour:
   fireRate: 0
   enemyMinFireRate: 1
   enemyMaxFireRate: 2
-  shootClip: {fileID: 8300000, guid: 5bb25b7c946b4d445954df13b3c57289, type: 3}
+  shootClip: {fileID: 8300000, guid: 83a8c0883fd09544ca40c65118e9f0ab, type: 3}
 --- !u!114 &-4126405511029804665
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -15,6 +15,8 @@ public class LinealMovement : MonoBehaviour
 
     [SerializeField] private float maxLateralSpeed_ = 1;
 
+    [SerializeField] private bool lateralMovement = false;
+
     #endregion
 
     #region methods
@@ -55,12 +57,27 @@ public class LinealMovement : MonoBehaviour
 
         if(changeDirSpeed_ != 0)
         {
-            dir_.x += changeDirSpeed_; 
-
-            if(dir_.x >= maxLateralSpeed_ || dir_.x <= -maxLateralSpeed_)
+            if (!lateralMovement)
             {
-                changeDirSpeed_ *= -1;
+                dir_.x += changeDirSpeed_;
+
+                if (dir_.x >= maxLateralSpeed_ || dir_.x <= -maxLateralSpeed_)
+                {
+                    changeDirSpeed_ *= -1;
+                }
             }
+            else
+            {
+
+                dir_.y += changeDirSpeed_;
+
+                if (dir_.y >= maxLateralSpeed_ || dir_.y <= -maxLateralSpeed_)
+                {
+                    changeDirSpeed_ *= -1;
+                }
+
+            }
+            
         }
 
     }

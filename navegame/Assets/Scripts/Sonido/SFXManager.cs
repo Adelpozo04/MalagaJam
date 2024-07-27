@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class SFXManager : MonoBehaviour
 {
@@ -38,7 +39,7 @@ public class SFXManager : MonoBehaviour
         audioSource.clip = audioClip;
 
         //assign volume
-        audioSource.volume = volume;
+        audioSource.volume = volume * volumeFactor;
 
         //play clip
         audioSource.Play();
@@ -64,7 +65,7 @@ public class SFXManager : MonoBehaviour
         audioSource.clip = motorAudio[0];
 
         //assign volume
-        audioSource.volume = 1f;
+        audioSource.volume = 1f * volumeFactor;
 
         //play clip
         audioSource.Play();
@@ -120,7 +121,7 @@ public class SFXManager : MonoBehaviour
         audioSource.clip = motorAudio[1];
 
         //assign volume
-        audioSource.volume = 0.5f;
+        audioSource.volume = 0.5f * volumeFactor;
 
         //play clip
         audioSource.Play();
@@ -134,6 +135,7 @@ public class SFXManager : MonoBehaviour
     private void setPanStereo(float value)
     {
         soundFXObject.panStereo = value;
+        soundFXObjectCont.panStereo = value;
     }
 
     /// <summary>
@@ -153,7 +155,14 @@ public class SFXManager : MonoBehaviour
         }
         
         if(!leftSpeakerAlive && !rightSpeakerAlive)
-            volumeFactor = 0;
-            
+        {
+            volumeFactor = 0f;
+        }
+    }
+    private void Start()
+    {
+
+        soundFXObject.panStereo = 0;
+        soundFXObjectCont.panStereo = 0;
     }
 }
