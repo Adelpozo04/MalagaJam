@@ -136,6 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxLife: 10
   currentLife: 0
+  fuelPrefab: {fileID: 7848089265289364465, guid: 7a0b3ca32e846684ca7dc46bdff087d2, type: 3}
   dieClip: {fileID: 8300000, guid: c4f4851da7bb4724d90a33b8887bb1e5, type: 3}
 --- !u!61 &-8451209708777278161
 BoxCollider2D:
