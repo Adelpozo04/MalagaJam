@@ -1,3 +1,4 @@
+using System;
 using System.Globalization;
 using TMPro;
 using UnityEngine;
@@ -5,20 +6,25 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
-
-
+    
     #region parameters
     
-    [SerializeField] private float winOverTime = 100;
-    [SerializeField] private float timeWhenWin = 1;
+    [SerializeField] private int winOverTime = 100;
+    [SerializeField] private int timeWhenWin = 1;
     [SerializeField] private TMP_Text scoreText;
     #endregion
 
     #region properties
-    
+
+    private SizeChangeAnim scAnim;
     private float _elapsedTime = 0;
     private float _totalPoints;
     #endregion
+
+    private void Start()
+    {
+        scAnim = GetComponent<SizeChangeAnim>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -26,7 +32,7 @@ public class ScoreManager : MonoBehaviour
         if(_elapsedTime >= timeWhenWin)
         {
             _elapsedTime = 0;
-            _totalPoints += winOverTime;
+            AddScore(winOverTime);
             UpdateText();
         }
         else
@@ -44,6 +50,7 @@ public class ScoreManager : MonoBehaviour
     void AddScore(int points)
     {
         _totalPoints += points;
+        scAnim.DoIt();
         UpdateText();
     }
 }
