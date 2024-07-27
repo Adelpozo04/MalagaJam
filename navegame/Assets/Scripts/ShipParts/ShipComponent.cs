@@ -22,7 +22,7 @@ public class ShipComponent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myShipMng_ = this.transform.parent.GetComponent<ShipManager>();
+        //myShipMng_ = this.transform.parent.gameObject.GetComponent<ShipManager>();
     }
 
     // Update is called once per frame

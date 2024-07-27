@@ -148,8 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxLife: 10
   currentLife: 0
-  isPlayer: 0
-  leaderBoard_: {fileID: 0}
+  dieClip: {fileID: 8300000, guid: c4f4851da7bb4724d90a33b8887bb1e5, type: 3}
 --- !u!61 &4716754317132823993
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -214,6 +213,7 @@ MonoBehaviour:
   fireRate: 0
   enemyMinFireRate: 2
   enemyMaxFireRate: 3
+  shootClip: {fileID: 8300000, guid: 5bb25b7c946b4d445954df13b3c57289, type: 3}
 --- !u!114 &-7813118114013149215
 MonoBehaviour:
   m_ObjectHideFlags: 0
