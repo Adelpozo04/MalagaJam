@@ -198,8 +198,8 @@ MonoBehaviour:
   damage: 10
   isPlayer: 0
   fireRate: 0
-  enemyMinFireRate: 1
-  enemyMaxFireRate: 2
+  enemyMinFireRate: 2
+  enemyMaxFireRate: 3
   shootClip: {fileID: 8300000, guid: 5bb25b7c946b4d445954df13b3c57289, type: 3}
 --- !u!114 &-4126405511029804665
 MonoBehaviour:

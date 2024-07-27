@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: -8451209708777278161}
   - component: {fileID: 1983896579352724303}
   - component: {fileID: 7886072239771517174}
-  - component: {fileID: 5574179631135731673}
   - component: {fileID: 248464147946985637}
   m_Layer: 0
   m_Name: ArmonicEnemy
@@ -199,8 +198,8 @@ MonoBehaviour:
   damage: 10
   isPlayer: 0
   fireRate: 0
-  enemyMinFireRate: 0.5
-  enemyMaxFireRate: 1.5
+  enemyMinFireRate: 1
+  enemyMaxFireRate: 3
   shootClip: {fileID: 8300000, guid: 5bb25b7c946b4d445954df13b3c57289, type: 3}
 --- !u!114 &7886072239771517174
 MonoBehaviour:

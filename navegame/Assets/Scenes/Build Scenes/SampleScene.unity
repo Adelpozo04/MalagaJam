@@ -1026,7 +1026,7 @@ PrefabInstance:
       objectReference: {fileID: 314628235}
     - target: {fileID: 3896167890588078628, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
       propertyPath: fuelSpeendPerSecond
-      value: 75
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3896167890588078628, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
       propertyPath: controlHelperManager
