@@ -50,7 +50,7 @@ public class InputTest : MonoBehaviour
 
         leftPressed = true;
 
-        print("leftPressed");
+        //print("leftPressed");
 
         /*
         currentActionMap = 2;
@@ -66,7 +66,7 @@ public class InputTest : MonoBehaviour
         if (!context.started) return;
         rightPressed = true;
 
-        print("rightPressed");
+        //print("rightPressed");
     }
     public void moveUp(InputAction.CallbackContext context)
     {
@@ -76,7 +76,7 @@ public class InputTest : MonoBehaviour
 
         upPressed = true;
 
-        print("upPressed");
+        //print("upPressed");
     }
     public void moveDown(InputAction.CallbackContext context)
     {
@@ -86,7 +86,7 @@ public class InputTest : MonoBehaviour
 
         downPressed = true; 
 
-        print("downPressed");
+        //print("downPressed");
     }
     public void shoot(InputAction.CallbackContext context)
     {
@@ -104,7 +104,7 @@ public class InputTest : MonoBehaviour
 
         startShoot.Invoke();
 
-        print("shootPressed");
+        //print("shootPressed");
     }
 
 

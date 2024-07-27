@@ -163,14 +163,6 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1717295558792724806, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717295558792724806, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717295558792724806, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -200,11 +192,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1717295558792724806, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -59
+      value: -19
       objectReference: {fileID: 0}
     - target: {fileID: 1717295558792724806, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -78
+      value: -177
       objectReference: {fileID: 0}
     - target: {fileID: 1717295558792724806, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -221,10 +213,6 @@ PrefabInstance:
     - target: {fileID: 3123153274391775779, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
       propertyPath: m_Name
       value: FuelBar
-      objectReference: {fileID: 0}
-    - target: {fileID: 6532813104589903564, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
-      propertyPath: maxFuel
-      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 6532813104589903564, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
       propertyPath: leaderBoard_
@@ -383,6 +371,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1772693682628080847, guid: 1887aab9899656f47bd61f61a9daf403, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314709404428542320, guid: 1887aab9899656f47bd61f61a9daf403, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2733144689619858215, guid: 1887aab9899656f47bd61f61a9daf403, type: 3}
@@ -948,6 +940,10 @@ PrefabInstance:
     - target: {fileID: 7492145023473425334, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
       propertyPath: m_Name
       value: CurrentControls
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492145023473425334, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7940113912674763272, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
       propertyPath: m_Pivot.x

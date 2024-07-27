@@ -6,15 +6,17 @@ public class PauseManager : MonoBehaviour
 {
     [SerializeField] GameObject visualContainer;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    private bool paused = false;
+
+
+    public void switchPause()
     {
-        
+        paused = !paused;
+        visualContainer.SetActive(visualContainer.activeSelf);
+
+        Time.timeScale = paused ? 0.0f : 1.0f;
+
     }
+    
 }
