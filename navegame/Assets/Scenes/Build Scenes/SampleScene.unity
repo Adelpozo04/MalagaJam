@@ -1749,6 +1749,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CurrentControls
       objectReference: {fileID: 0}
+    - target: {fileID: 7492145023473425334, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7940113912674763272, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1872,6 +1876,10 @@ PrefabInstance:
     - target: {fileID: 240049332316519245, guid: cb79600faeaf870469c37b661bb7dcec, type: 3}
       propertyPath: m_Name
       value: ChangeInputWarning
+      objectReference: {fileID: 0}
+    - target: {fileID: 240049332316519245, guid: cb79600faeaf870469c37b661bb7dcec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8789860049675894607, guid: cb79600faeaf870469c37b661bb7dcec, type: 3}
       propertyPath: m_Pivot.x
@@ -2015,6 +2023,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7260604611847447751, guid: 6d8733f76f8cf3c47983260f8d5f2c1d, type: 3}
+      propertyPath: leftClick
+      value: 
+      objectReference: {fileID: 21300000, guid: 27f0988184b3097498ebb0448e92f334, type: 3}
+    - target: {fileID: 7260604611847447751, guid: 6d8733f76f8cf3c47983260f8d5f2c1d, type: 3}
+      propertyPath: rightClick
+      value: 
+      objectReference: {fileID: 21300000, guid: ded04a1fc5405944d8bfa5a03c4b1c53, type: 3}
+    - target: {fileID: 7260604611847447751, guid: 6d8733f76f8cf3c47983260f8d5f2c1d, type: 3}
+      propertyPath: middleClick
+      value: 
+      objectReference: {fileID: 21300000, guid: f4c104324d92f5144bb88ba1068da75f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
