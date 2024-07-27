@@ -16,28 +16,44 @@ public class ControlHelper : MonoBehaviour
     {
     }
 
-    public void setControl(string controlName)
+    public void setControl(string controlName,float scaleMultiplier)
     {
         if(controlName == "rightshift")
         {
-            textCmp.gameObject.SetActive(false);
-            image.gameObject.SetActive(true);
+            //textCmp.gameObject.SetActive(false);
+            //image.gameObject.SetActive(true);
+
+            textCmp.gameObject.SetActive(true);
+            image.gameObject.SetActive(false);
+
+            textCmp.fontSize = 70;
+            textCmp.text = "R \nSHIFT";
+
         }
         else if (controlName == "leftclick")
         {
             textCmp.gameObject.SetActive(false);
             image.gameObject.SetActive(true);
 
+            image.sprite = SpritesContainer.Instance.leftClick;
+
+
         }
         else if (controlName == "rightclick")
         {
             textCmp.gameObject.SetActive(false);
             image.gameObject.SetActive(true);
+
+            image.sprite = SpritesContainer.Instance.rightClick;
+
         }
         else if (controlName == "middleclick")
         {
             textCmp.gameObject.SetActive(false);
             image.gameObject.SetActive(true);
+
+            image.sprite = SpritesContainer.Instance.middleClick;
+
 
         }
         else if (controlName == "shift")
@@ -100,11 +116,15 @@ public class ControlHelper : MonoBehaviour
         }
         else
         {
+            image.gameObject.SetActive(false);
+
             textCmp.text = controlName;
             textCmp.gameObject.SetActive(true);
 
             textCmp.fontSize = 150;
 
         }
+
+        textCmp.fontSize = textCmp.fontSize * scaleMultiplier;
     }
 }

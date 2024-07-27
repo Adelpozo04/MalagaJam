@@ -5207,6 +5207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3919664998549386946}
   - component: {fileID: 5300851015999009430}
+  - component: {fileID: 7062402916973280009}
   m_Layer: 6
   m_Name: Antena der
   m_TagString: Untagged
@@ -5281,6 +5282,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7062402916973280009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3742460800930144716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78e8d389d2cf8124088803b4e36b3aab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRight: 1
 --- !u!1 &4945967706285894167
 GameObject:
   m_ObjectHideFlags: 0
@@ -5457,6 +5471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3333524930776952607}
   - component: {fileID: 6070562709606287122}
+  - component: {fileID: 3876822627343463441}
   m_Layer: 6
   m_Name: Antena izq
   m_TagString: Untagged
@@ -5531,6 +5546,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3876822627343463441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7642415005897757457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78e8d389d2cf8124088803b4e36b3aab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRight: 0
 --- !u!1 &8678429295277912363
 GameObject:
   m_ObjectHideFlags: 0
@@ -10374,6 +10402,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1233079725229833521}
     - target: {fileID: 633110655414412441, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
+      propertyPath: _speedFactor
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 633110655414412441, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
       propertyPath: _destroyMotorClip
       value: 
       objectReference: {fileID: 8300000, guid: c4f4851da7bb4724d90a33b8887bb1e5, type: 3}
@@ -10464,6 +10496,10 @@ PrefabInstance:
     - target: {fileID: 3251317684296047964, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861683804280421407, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
+      propertyPath: velocity
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861683804280421407, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
       propertyPath: shootClip

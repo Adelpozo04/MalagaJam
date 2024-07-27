@@ -38,6 +38,13 @@ public class LinealMovement : MonoBehaviour
     void Start()
     {
 
+        int n = Random.Range(0, 2);
+
+        if (n == 0)
+        {
+            dir_.x *= -1;
+        }
+
     }
 
     // Update is called once per frame

@@ -9,6 +9,8 @@ public class PlayerInfoManager : MonoBehaviour
 
     public LeaderBoard leaderboard_;
 
+    [SerializeField] private GameObject buttons_;
+
     public TMP_InputField player_input_;
 
     string name;
@@ -25,6 +27,8 @@ public class PlayerInfoManager : MonoBehaviour
         name = player_input_.text;
 
         StartCoroutine(SetupRutine());
+
+        buttons_.SetActive(true);
 
     }
 
