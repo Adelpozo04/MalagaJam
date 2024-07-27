@@ -25,7 +25,7 @@ public class ControlHelperManager : MonoBehaviour
     [SerializeField] ControlHelper down;
     [SerializeField] ControlHelper shoot;
 
-  
+    public float scaleMultiplier = 1.0f;
 
     public void updateControlHelpers(int index)
     {
@@ -34,16 +34,26 @@ public class ControlHelperManager : MonoBehaviour
             print("error index out of bounds");
         }
 
-        left.setControl(mapActionsNamesList[index].left.ToLower());
-        right.setControl(mapActionsNamesList[index].right.ToLower());
-        up.setControl(mapActionsNamesList[index].up.ToLower());
-        down.setControl(mapActionsNamesList[index].down.ToLower());
-        shoot.setControl(mapActionsNamesList[index].shoot.ToLower());    
+        left.setControl(mapActionsNamesList[index].left.ToLower(),scaleMultiplier);
+        right.setControl(mapActionsNamesList[index].right.ToLower(),scaleMultiplier);
+        up.setControl(mapActionsNamesList[index].up.ToLower(),scaleMultiplier);
+        down.setControl(mapActionsNamesList[index].down.ToLower(),scaleMultiplier);
+        shoot.setControl(mapActionsNamesList[index].shoot.ToLower(),scaleMultiplier);    
+    }
+
+    public void updateControlHelpers(MapActionsNames names)
+    {
+        left.setControl(names.left.ToLower(), scaleMultiplier);
+        right.setControl(names.right.ToLower(), scaleMultiplier);
+        up.setControl(names.up.ToLower(), scaleMultiplier);
+        down.setControl(names.down.ToLower(), scaleMultiplier);
+        shoot.setControl(names.shoot.ToLower(), scaleMultiplier);
     }
 
 
     private void Start()
     {
+        if (mapActionsNamesList.Count == 0) return;
         updateControlHelpers(0);    
     }
 }

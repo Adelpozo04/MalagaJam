@@ -456,6 +456,25 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1772693682628080847, guid: 1887aab9899656f47bd61f61a9daf403, type: 3}
   m_PrefabInstance: {fileID: 438080740}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &472524860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3742460800930144716, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
+  m_PrefabInstance: {fileID: 1827248884}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &472524862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472524860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78e8d389d2cf8124088803b4e36b3aab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRight: 1
+  destroyClip: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1549,7 +1568,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3742460800930144716, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 472524862}
   m_SourcePrefab: {fileID: 100100000, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
 --- !u!1001 &1831258218
 PrefabInstance:
@@ -1865,6 +1887,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e681503853e2b8428e296a43a8688cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2107563635 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3896167890588078628, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
+  m_PrefabInstance: {fileID: 1827248884}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d40931f73d252054ebf73a4d17620b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6609589965891871463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1881,6 +1914,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2220773489393109580, guid: cb79600faeaf870469c37b661bb7dcec, type: 3}
+      propertyPath: info
+      value: 
+      objectReference: {fileID: 1913907511}
+    - target: {fileID: 2220773489393109580, guid: cb79600faeaf870469c37b661bb7dcec, type: 3}
+      propertyPath: changeInputManager
+      value: 
+      objectReference: {fileID: 2107563635}
     - target: {fileID: 8789860049675894607, guid: cb79600faeaf870469c37b661bb7dcec, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

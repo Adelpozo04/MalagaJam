@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
 
     //TODO: Testear los cambios
     private Rigidbody2D _myRigidBody;
+
+    private Transform myTr;
     
     //afecta la rapidez del movimiento
     [SerializeField] private float _speedFactor;
@@ -50,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
         _direction = Vector2.zero;
         _rightSpeed = _speedFactor;
         _leftSpeed = _speedFactor;
+        myTr = transform;
     }
 
     // Update is called once per frame
@@ -60,11 +63,11 @@ public class PlayerMovement : MonoBehaviour
 
         //Debug.Log(_direction);
         
-        if (_direction.x <= 0)
+        if (_direction.x <= 0 && myTr.position.x > 20)
         {
             _myRigidBody.velocity = _direction * _rightSpeed;
         }
-        else
+        else if (myTr.position.x < 200)
         {
             _myRigidBody.velocity = _direction * _leftSpeed;
         }
