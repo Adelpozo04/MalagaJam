@@ -80,7 +80,7 @@ public class FuelBarController : MonoBehaviour
     {
         //Descomentar cuando esté funcionando el leaderBoard
         
-        //leaderBoard_.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
-        //SceneManager.LoadScene("MenuPrincipal");
+        leaderBoard_.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
+        SceneManager.LoadScene("MenuPrincipal");
     }
 }

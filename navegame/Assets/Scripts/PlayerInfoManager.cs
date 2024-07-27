@@ -11,28 +11,21 @@ public class PlayerInfoManager : MonoBehaviour
 
     public TMP_InputField player_input_;
 
+    string name;
+
     // Start is called before the first frame update
     void Start()
     {
-
-        StartCoroutine(SetupRutine());
         
     }
 
     public void SetPlayerName()
     {
 
-        LootLockerSDKManager.SetPlayerName(player_input_.text, (response) =>
-        {
-            if (response.success)
-            {
-                Debug.Log("Nombre puesto correcto");
-            }
-            else
-            {
-                Debug.Log("Fallo en eleccion de nombre" + response.errorData);
-            }
-        });
+        name = player_input_.text;
+
+        StartCoroutine(SetupRutine());
+
     }
 
     IEnumerator SetupRutine()
@@ -44,8 +37,9 @@ public class PlayerInfoManager : MonoBehaviour
     IEnumerator LoginRutine()
     {
         bool done = false;
-        LootLockerSDKManager.StartGuestSession((response =>
+        LootLockerSDKManager.StartGuestSession(name + " ", (response =>
         {
+
             if (response.success)
             {
                 Debug.Log("Jugador se unio");
@@ -57,9 +51,23 @@ public class PlayerInfoManager : MonoBehaviour
                 Debug.Log("Jugador no se unio");
                 done = true;
             }
+
+            LootLockerSDKManager.SetPlayerName(player_input_.text, (response) =>
+            {
+                if (response.success)
+                {
+                    Debug.Log("Nombre puesto correcto");
+                }
+                else
+                {
+                    Debug.Log("Fallo en eleccion de nombre" + response.errorData);
+                }
+            });
         }));
 
         yield return new WaitWhile(() => done == false);
+
+        
     }
 
     // Update is called once per frame
