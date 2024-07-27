@@ -18,8 +18,11 @@ public class ScoreManager : MonoBehaviour
 
     private SizeChangeAnim scAnim;
     private float _elapsedTime = 0;
-    private float _totalPoints;
+    private int _totalPoints;
     #endregion
+
+    static private ScoreManager instance;
+    static public ScoreManager Instance { get { return instance; } }
 
     private void Start()
     {
@@ -42,15 +45,20 @@ public class ScoreManager : MonoBehaviour
     }
 
     
-    void UpdateText()
+    private void UpdateText()
     {
         scoreText.text = _totalPoints.ToString(CultureInfo.CurrentCulture);
     }
 
-    void AddScore(int points)
+    public void AddScore(int points)
     {
         _totalPoints += points;
         scAnim.DoIt();
         UpdateText();
+    }
+
+    public int GetScore()
+    {
+        return _totalPoints;
     }
 }
