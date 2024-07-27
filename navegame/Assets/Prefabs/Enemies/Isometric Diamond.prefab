@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed_: 1.5
-  dir_: {x: 3, y: -1, z: 0}
+  dir_: {x: 4, y: -1, z: 0}
   changeDirSpeed_: 0
   maxLateralSpeed_: 0.8
 --- !u!114 &3922846430751498044

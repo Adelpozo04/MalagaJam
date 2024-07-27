@@ -6,7 +6,7 @@ public class SFXManager : MonoBehaviour
 {
     public static SFXManager instance;
 
-    [SerializeField] private AudioSource soundFXObject; 
+    [SerializeField] private AudioSource soundFXObject;
     [SerializeField] private AudioSource soundFXObjectCont;
 
     [SerializeField] private GameObject motorStartObject;
@@ -15,11 +15,15 @@ public class SFXManager : MonoBehaviour
     [SerializeField] private Transform playerTransform;
 
 
-    [SerializeField] private AudioClip[] motorAudio = new AudioClip [3];
+    [SerializeField] private AudioClip[] motorAudio = new AudioClip[3];
+
+    private bool rightSpeakerAlive = true;
+    private bool leftSpeakerAlive = true;
+    private float volumeFactor = 1;
 
     private void Awake()
     {
-        if(instance != null)
+        if (instance != null)
             Destroy(this);
         else
             instance = this;
@@ -49,7 +53,7 @@ public class SFXManager : MonoBehaviour
 
     public void startMotorsClip()
     {
-        if(motorContObject != null || motorStartObject != null)
+        if (motorContObject != null || motorStartObject != null)
             return;
 
         //Al principio
@@ -127,4 +131,29 @@ public class SFXManager : MonoBehaviour
         motorContObject = audioSource.gameObject;
     }
 
+    private void setPanStereo(float value)
+    {
+        soundFXObject.panStereo = value;
+    }
+
+    /// <summary>
+    /// Destruyes el izquierdo con un false y el derecho con un true
+    /// </summary>
+    public void destroySpeaker(bool derecho = true)
+    {
+        if(!derecho && leftSpeakerAlive && rightSpeakerAlive)
+        {
+            leftSpeakerAlive = false;
+            setPanStereo(1f);
+        }
+        else if (derecho && rightSpeakerAlive && leftSpeakerAlive)
+        {
+            rightSpeakerAlive = false;
+            setPanStereo(-1f);
+        }
+        
+        if(!leftSpeakerAlive && !rightSpeakerAlive)
+            mute = true;
+            
+    }
 }
