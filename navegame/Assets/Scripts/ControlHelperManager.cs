@@ -40,4 +40,10 @@ public class ControlHelperManager : MonoBehaviour
         down.setControl(mapActionsNamesList[index].down);
         shoot.setControl(mapActionsNamesList[index].shoot);    
     }
+
+
+    private void Start()
+    {
+        updateControlHelpers(0);    
+    }
 }

@@ -66,7 +66,7 @@ public class ControlHelper : MonoBehaviour
         }
         else
         {
-            textCmp.text = name;
+            textCmp.text = controlName;
             textCmp.gameObject.SetActive(true);
         }
     }
