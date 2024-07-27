@@ -224,8 +224,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 133}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0.000019073, y: 386}
+  m_SizeDelta: {x: 254.49, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &423619605
 MonoBehaviour:
@@ -274,8 +274,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -599,8 +599,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 35}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: 112}
+  m_SizeDelta: {x: 200, y: 311.5064}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1252780210
 MonoBehaviour:
@@ -622,9 +622,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Juli\xE1n Serrano Chac\xF3n - Roles\nAdr\xEDan del Pozo Hern\xE1ndez -
-    Roles\nSamuel Garc\xEDa Baz\xE1n - Roles\nDiego Monternegro Calvo -Roles\nJos\xE9
-    Antonio Carmano Alfonsel -Roles\nPablo Marcos Serrano - Roles\nJiale He - Roles"
+  m_text: "Juli\xE1n Serrano Chac\xF3n - Dise\xF1o, Programaci\xF3n, Testeo, Musica
+    y sonido.\nAdr\xEDan del Pozo Hern\xE1ndez - Roles\nSamuel Garc\xEDa Baz\xE1n
+    - Roles\nDiego Monternegro Calvo -Roles\nJos\xE9 Antonio Carmano Alfonsel -Roles\nPablo
+    Marcos Serrano - Roles\nJiale He - Roles"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0f442bc824f4b684f86aaf8e8ada3cdf, type: 2}
   m_sharedMaterial: {fileID: 4290706537323977036, guid: 0f442bc824f4b684f86aaf8e8ada3cdf, type: 2}
@@ -651,8 +652,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -687,7 +688,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -190.49371, y: 0, z: -225.77014, w: -160.86115}
+  m_margin: {x: -816.043, y: 0, z: -804.75684, w: -199.60287}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -737,8 +738,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 232, y: -152}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 331.25305, y: -331.89502}
+  m_SizeDelta: {x: 353.5331, y: 141.3727}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1333218709
 MonoBehaviour:
@@ -962,8 +963,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
