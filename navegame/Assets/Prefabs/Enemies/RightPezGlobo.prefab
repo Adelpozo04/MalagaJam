@@ -106,8 +106,9 @@ MonoBehaviour:
   speed_: 2
   dir_: {x: -1, y: 0, z: 0}
   changeDirSpeed_: 0.05
-  maxLateralSpeed_: 5
+  maxLateralSpeed_: 2
   lateralMovement: 1
+  randomLateralMove: 0
 --- !u!114 &-7928793699949088661
 MonoBehaviour:
   m_ObjectHideFlags: 0

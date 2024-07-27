@@ -108,6 +108,8 @@ MonoBehaviour:
   dir_: {x: 4, y: -1, z: 0}
   changeDirSpeed_: 0
   maxLateralSpeed_: 0.8
+  lateralMovement: 0
+  randomLateralMove: 1
 --- !u!114 &3922846430751498044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,7 +136,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outOfFloor: 1
-  margen: 2
+  outOfRight: 0
+  outOfLeft: 0
+  margen: 1
 --- !u!114 &7964632361524273614
 MonoBehaviour:
   m_ObjectHideFlags: 0
