@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c51a2cc912e6ba744834c32f0a0ddfe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed_: 1
+  speed_: 2
   dir_: {x: 0, y: -1, z: 0}
   changeDirSpeed_: 0
   maxLateralSpeed_: 1
@@ -199,8 +199,8 @@ MonoBehaviour:
   damage: 10
   isPlayer: 0
   fireRate: 0
-  enemyMinFireRate: 2
-  enemyMaxFireRate: 3
+  enemyMinFireRate: 1
+  enemyMaxFireRate: 2
   shootClip: {fileID: 8300000, guid: 5bb25b7c946b4d445954df13b3c57289, type: 3}
 --- !u!114 &-4126405511029804665
 MonoBehaviour:
