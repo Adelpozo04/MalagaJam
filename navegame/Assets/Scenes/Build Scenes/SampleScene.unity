@@ -232,6 +232,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1717295558792724806, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
   m_PrefabInstance: {fileID: 314628233}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &314628235 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6532813104589903564, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
+  m_PrefabInstance: {fileID: 314628233}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89a4f3f76eb52eb48be48c2c766b25b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &361218873
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,18 +602,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerPrefab
       objectReference: {fileID: 0}
-    - target: {fileID: 2930806854668758873, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
-      propertyPath: leaderBoard_
+    - target: {fileID: 3896167890588078628, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
+      propertyPath: fuelBarController
       value: 
-      objectReference: {fileID: 361218874}
-    - target: {fileID: 7209875352762749638, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 7209875352762749638, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.75
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 314628235}
     - target: {fileID: 7209875352762749638, guid: 1cc7f4f12db0cc0499327bb33df71464, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.32

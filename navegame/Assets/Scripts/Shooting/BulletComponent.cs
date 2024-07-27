@@ -59,7 +59,7 @@ public class BulletComponent : MonoBehaviour
         {
             var bulletCmp = collision.gameObject.GetComponent<BulletComponent>();
 
-            //si chocamos con otra bala de distinto dueño
+            //si chocamos con otra bala de distinto dueï¿½o
             if (bulletCmp != null && bulletCmp.getOwnerPlayer() != ownerPlayer)
             {
                 Destroy(gameObject);
@@ -71,10 +71,7 @@ public class BulletComponent : MonoBehaviour
 
             //si chocamos contra un objeto de otro grupo(player/enemigo)
 
-            if (lifeCmp != null &&
-               ((lifeCmp.getIsPlayer() && !ownerPlayer) ||
-                 (!lifeCmp.getIsPlayer() && ownerPlayer)
-                 ))
+            if (lifeCmp != null)
             {
                 lifeCmp.reciveDamage(damage);
                 Destroy(gameObject);

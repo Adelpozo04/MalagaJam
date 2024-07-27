@@ -17,7 +17,7 @@ public class ScoreManager : MonoBehaviour
     #region properties
 
     private SizeChangeAnim scAnim;
-    private float _elapsedTime = 0;
+    private float _elapsedTime;
     private int _totalPoints;
     #endregion
 

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 892576024810056061}
   - component: {fileID: 4492774282213888956}
   - component: {fileID: 9196391928638743988}
+  - component: {fileID: 6389792908375902881}
   m_Layer: 0
   m_Name: InputTest
   m_TagString: Untagged
@@ -556,6 +557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 4492774282213888956}
+  maxActionMaps: 6
   actionMapBaseName: Action
   startShoot:
     m_PersistentCalls:
@@ -587,3 +589,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6389792908375902881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6239384511561350220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d40931f73d252054ebf73a4d17620b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuelCostToChange:
+  - 250
+  - 750
+  - 1250
+  - 2000
+  - 3000
+  fuelBarController: {fileID: 0}
+  inputController: {fileID: 9196391928638743988}
+  fuelSpeendPerSecond: 25

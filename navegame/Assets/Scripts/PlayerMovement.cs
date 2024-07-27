@@ -70,6 +70,6 @@ public class PlayerMovement : MonoBehaviour
             _myRigidBody.velocity = _direction * (_leftSpeed + _rightSpeed) / 2;
         }
 
-        Debug.Log(_myRigidBody.velocity.x);
+        //Debug.Log(_myRigidBody.velocity.x);
     }
 }
