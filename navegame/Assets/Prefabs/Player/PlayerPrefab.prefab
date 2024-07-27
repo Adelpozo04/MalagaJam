@@ -504,6 +504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraInterference: {fileID: 2100000, guid: f0ecd14b368fc3141aed6f68a237192d, type: 2}
+  destroyClip: {fileID: 8300000, guid: 6a7a60d5778c9174ba015e8e9da82208, type: 3}
 --- !u!61 &5241004980962072662
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -645,6 +646,10 @@ PrefabInstance:
       propertyPath: _myInputTest
       value: 
       objectReference: {fileID: 1233079725229833521}
+    - target: {fileID: 633110655414412441, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
+      propertyPath: _destroyMotorClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c4f4851da7bb4724d90a33b8887bb1e5, type: 3}
     - target: {fileID: 633110655414412441, guid: 248ba2b6b56db304d847c1da89dd74dd, type: 3}
       propertyPath: _percentageToReduce
       value: 20
