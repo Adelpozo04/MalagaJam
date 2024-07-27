@@ -4,7 +4,7 @@ public class ParallaxBackground : MonoBehaviour
 {
     // Scroll the main texture based on time
 
-    float scrollSpeed = 0.5f;
+    [SerializeField] float scrollSpeed = 0.5f;
     Renderer rend;
 
     void Start()
