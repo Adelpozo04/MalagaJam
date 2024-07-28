@@ -9,6 +9,7 @@ public class FuelBarController : MonoBehaviour
 
     public static FuelBarController Instance ;
     public GameObject visualContaierGameOver;
+    public GameObject visualContaierWarningChange;
 
     [SerializeField] private float maxFuel;
     [SerializeField] private float remainingFuel;
@@ -113,6 +114,7 @@ public class FuelBarController : MonoBehaviour
 
 
         visualContaierGameOver.SetActive(true);
+        visualContaierGameOver.SetActive(false);
 
         leaderBoard.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
 
