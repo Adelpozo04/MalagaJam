@@ -58,8 +58,6 @@ public class SpawnerEntities : MonoBehaviour
 
                 totalProb += propEntityAppear_[i];
 
-                Debug.Log(totalProb + " / " + (prob / 100.0) + " / " + (propEntityAppear_[i]));
-
                 if ((prob / 100.0) > totalProb)
                 {
                     i++;
@@ -70,8 +68,6 @@ public class SpawnerEntities : MonoBehaviour
                 }
       
             }
-
-            Debug.Log("Sal enemigo: " + i);
 
             Instantiate(entityPrefab_[i], transform.position, Quaternion.identity);
         }

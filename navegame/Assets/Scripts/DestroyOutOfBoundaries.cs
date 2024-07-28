@@ -50,7 +50,7 @@ public class DestroyOutOfBoundaries : MonoBehaviour
 
         if (outOfLeft)
         {
-            if (Camera.main.ViewportToWorldPoint(new Vector3(0, 0f, 0)).x >= transform.position.x + margen)
+            if (Camera.main.ViewportToWorldPoint(new Vector3(0, 0, 0)).x >= transform.position.x + margen)
             {
 
                 Destroy(gameObject);
@@ -61,7 +61,7 @@ public class DestroyOutOfBoundaries : MonoBehaviour
         if (outOfRight)
         {
 
-            if (Camera.main.ViewportToWorldPoint(new Vector3(0, 1, 0)).x <= transform.position.x - margen)
+            if (Camera.main.ViewportToWorldPoint(new Vector3(1, 0, 0)).x <= transform.position.x - margen)
             {
 
                 Destroy(gameObject);
