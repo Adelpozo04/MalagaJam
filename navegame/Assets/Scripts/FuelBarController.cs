@@ -114,7 +114,7 @@ public class FuelBarController : MonoBehaviour
 
         visualContaierGameOver.SetActive(true);
 
-        //leaderBoard.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
+        leaderBoard.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
 
         yield return new WaitForSecondsRealtime(1.5f);
         SceneManager.LoadScene("GameOver");

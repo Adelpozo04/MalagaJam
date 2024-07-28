@@ -9,6 +9,7 @@ public class SFXManager : MonoBehaviour
 
     [SerializeField] private AudioSource soundFXObject;
     [SerializeField] private AudioSource soundFXObjectCont;
+    [SerializeField] private AudioSource MusicObjectCont;
 
     [SerializeField] private GameObject motorStartObject;
     [SerializeField] private GameObject motorContObject;
@@ -136,12 +137,14 @@ public class SFXManager : MonoBehaviour
     {
         soundFXObject.panStereo = value;
         soundFXObjectCont.panStereo = value;
+        MusicObjectCont.panStereo = value;
     }
 
     private void mute()
     {
         soundFXObject.volume = 0;
         soundFXObjectCont.volume = 0;
+        MusicObjectCont.volume = 0;
     }
 
     private bool allAlive()
@@ -173,9 +176,10 @@ public class SFXManager : MonoBehaviour
 
         soundFXObject.panStereo = 0;
         soundFXObjectCont.panStereo = 0;
+        MusicObjectCont.panStereo = 0;
         soundFXObject.volume = 1;
         soundFXObjectCont.volume = 1;
-
+        MusicObjectCont.volume = 1;
     }
     private void Start()
     {
