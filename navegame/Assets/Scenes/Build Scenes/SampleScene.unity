@@ -1296,11 +1296,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8241892576180308291, guid: 857200fbf7ce2984ca35ec3048013329, type: 3}
       propertyPath: maxChangeTime
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8241892576180308291, guid: 857200fbf7ce2984ca35ec3048013329, type: 3}
       propertyPath: minChangeTime
-      value: 0
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8241892576180308291, guid: 857200fbf7ce2984ca35ec3048013329, type: 3}
       propertyPath: MusicObjectCont
