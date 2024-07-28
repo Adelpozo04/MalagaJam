@@ -53,7 +53,6 @@ public class LifeComponent : MonoBehaviour
             ScoreManager.Instance.AddScore(p);
             SFXManager.instance.playSFXClip(dieClip, transform, 1f);
             GameObject hwei = Instantiate(fuelPrefab, transform.position, Quaternion.identity);
-            //GetComponent<ShotingComponent>().enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
             GetComponent<LinealMovement>().ChangeMove(false);
             alive = false;
