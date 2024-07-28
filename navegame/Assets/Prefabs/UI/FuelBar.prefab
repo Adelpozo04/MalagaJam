@@ -51,12 +51,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89a4f3f76eb52eb48be48c2c766b25b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  visualContaierGameOver: {fileID: 0}
   maxFuel: 1250
   remainingFuel: 12
   innerBarProportions: {x: 0.8, y: 0.9}
   leaderBoard: {fileID: 0}
   innerBar: {fileID: 4199870877777847610}
-  evilBar: {fileID: 4326276054469335952}
+  evilBar: {fileID: 3824254039893685557}
   lowLifeThreshHold: 0
 --- !u!1 &3824254039893685557
 GameObject:
@@ -75,7 +76,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7748005030468712740
 RectTransform:
   m_ObjectHideFlags: 0
@@ -116,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.18823527, b: 0.21612963, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.033816338, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
