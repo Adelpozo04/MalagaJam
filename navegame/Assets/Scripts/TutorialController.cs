@@ -44,7 +44,7 @@ public class TutorialController : MonoBehaviour
                 break;
             case 3:
                 title.text = "Una última cosa";
-                desc.text = "Puedes pausar la partida con ESC y alternar los controles en pantalla con TAB";
+                desc.text = "Puedes pausar la partida con ESC y alternar los controles en pantalla con TAB.";
                 botonText.text = "VOLVER";
                 tutorialTitle.SetActive(false);
                 iconosTeclas.SetActive(true);
