@@ -666,6 +666,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1590397618}
     m_Modifications:
+    - target: {fileID: 851062579441909917, guid: 1887aab9899656f47bd61f61a9daf403, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 851062579441909917, guid: 1887aab9899656f47bd61f61a9daf403, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 35e5150415b9d76449b043f1319c13f8, type: 3}
     - target: {fileID: 1772693682628080847, guid: 1887aab9899656f47bd61f61a9daf403, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -750,8 +758,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 2884384371789273732, guid: 1887aab9899656f47bd61f61a9daf403, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884384371789273732, guid: 1887aab9899656f47bd61f61a9daf403, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4679ef70366dc784a8261f4572a76d25, type: 3}
+    - target: {fileID: 3255485679316789481, guid: 1887aab9899656f47bd61f61a9daf403, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6077015451960988647, guid: 1887aab9899656f47bd61f61a9daf403, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5305261219464410361, guid: 1887aab9899656f47bd61f61a9daf403, type: 3}
+    - {fileID: 5257490317426727990, guid: 1887aab9899656f47bd61f61a9daf403, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1887aab9899656f47bd61f61a9daf403, type: 3}
