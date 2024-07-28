@@ -87,7 +87,7 @@ public class BulletComponent : MonoBehaviour
             var shpmng = collision.GetComponent<ShipManager>();
             if(shpmng != null && !ownerPlayer)
             {
-                shpmng.sufferDamage(30);
+                //shpmng.sufferDamage(30);
             }
         }
     }

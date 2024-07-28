@@ -72,12 +72,15 @@ public class ShotingComponent : MonoBehaviour
         }
         else
         {
-            enemyElapsedTime += Time.deltaTime;
-
-            if (enemyElapsedTime > enemyfireRate )
+            if(GetComponent<LifeComponent>() != null && GetComponent<LifeComponent>().GetAlive())
             {
-                enemyElapsedTime = 0;
-                ShootBullet();
+                enemyElapsedTime += Time.deltaTime;
+
+                if (enemyElapsedTime > enemyfireRate)
+                {
+                    enemyElapsedTime = 0;
+                    ShootBullet();
+                }
             }
         }
     }
