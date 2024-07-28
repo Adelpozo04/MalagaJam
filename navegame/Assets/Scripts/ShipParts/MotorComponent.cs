@@ -31,7 +31,7 @@ public class MotorComponent : ShipComponent
         }
         else
         {
-            myShipMng_.sufferDamage((compLife_ - 1) * -20);
+            myShipMng_.sufferDamage((compLife_ - 1) * fuelLoss_);
         }
         compLife_--;
     }
@@ -40,7 +40,6 @@ public class MotorComponent : ShipComponent
     // Start is called before the first frame update
     void Start()
     {
-        compLife_ = 1;
         plMove = this.transform.parent.gameObject.GetComponent<PlayerMovement>();
         myShipMng_ = this.transform.parent.gameObject.GetComponent<ShipManager>();
     }
