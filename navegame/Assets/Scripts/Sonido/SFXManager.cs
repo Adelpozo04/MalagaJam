@@ -154,17 +154,15 @@ public class SFXManager : MonoBehaviour
             leftSpeakerAlive = false;
             setPanStereo(1f);
         }
-        else
-            mute();
-
-        if (derecho && rightSpeakerAlive && leftSpeakerAlive)
+        else if(derecho && rightSpeakerAlive && leftSpeakerAlive)
         {
             rightSpeakerAlive = false;
             setPanStereo(-1f);
         }
-        else
+        else(!leftSpeakerAlive && !rightSpeakerAlive)
             mute();
     }
+
     private void Start()
     {
 
