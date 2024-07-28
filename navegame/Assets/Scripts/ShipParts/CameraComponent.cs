@@ -14,9 +14,6 @@ public class CameraComponent : ShipComponent
 
     [SerializeField] private AudioClip destroyClip;
 
-    [SerializeField] GameObject estatica_;
-
-    [SerializeField] GameObject estaticaHud_;
     #endregion
 
     #region methods
@@ -27,17 +24,7 @@ public class CameraComponent : ShipComponent
             GetComponent<Animator>().SetTrigger("Destroy");
             //cameraInterference.SetFloat("_Clarity", 0.04f);
 
-            //if(Application.platform != RuntimePlatform.WebGLPlayer)
-            //{
-            //    effect.enabled = true;
-            //}
-            //else
-            //{
-                estaticaHud_.SetActive(true);
-                estatica_.SetActive(true);
-            //}
-            
-
+            effect.enabled = true;
 
         }
         else
