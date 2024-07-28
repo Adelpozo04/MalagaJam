@@ -771,7 +771,7 @@ VideoPlayer:
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
-  m_RenderMode: 3
+  m_RenderMode: 4
   m_AspectRatio: 2
   m_DataSource: 0
   m_TimeUpdateMode: 2
@@ -1896,6 +1896,10 @@ PrefabInstance:
     - target: {fileID: 7492145023473425334, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
       propertyPath: m_Name
       value: CurrentControls
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517273734574738999, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
+      propertyPath: m_Color.a
+      value: 0.9019608
       objectReference: {fileID: 0}
     - target: {fileID: 7940113912674763272, guid: c0060b53a137852449f7e7452756b0e6, type: 3}
       propertyPath: m_Pivot.x
