@@ -23,6 +23,14 @@ public class SFXManager : MonoBehaviour
     private bool leftSpeakerAlive = true;
     private float volumeFactor = 1;
 
+
+
+    private float elapsedTime;
+
+    private float changeTime;
+    [SerializeField] private float minChangeTime;
+    [SerializeField] private float maxChangeTime;
+
     private void Awake()
     {
         if (instance != null)
@@ -31,6 +39,29 @@ public class SFXManager : MonoBehaviour
             instance = this;
     }
 
+    private void Update()
+    {
+         
+        if(!leftSpeakerAlive && !rightSpeakerAlive)
+        {
+            elapsedTime += Time.deltaTime;
+
+
+            if (elapsedTime > changeTime)
+            {
+
+                print("aquuuuuuuuuuuuuuuuuuiiiiiiiiiiiiiiiiiiii");
+                var lado = Random.Range((int)1, (int)3);
+
+                setPanStereo(lado == 1 ? 1 : -1);
+
+
+                elapsedTime = 0;
+                changeTime = Random.Range(minChangeTime, maxChangeTime);
+
+            }
+        }
+    }
     public void playSFXClip(AudioClip audioClip, Transform spawnTransform, float volume)
     {
         //spawn the game object
@@ -149,7 +180,7 @@ public class SFXManager : MonoBehaviour
 
     private bool allAlive()
     {
-        return leftSpeakerAlive && rightSpeakerAlive;
+        return leftSpeakerAlive || rightSpeakerAlive;
     }
 
     /// <summary>
@@ -168,7 +199,12 @@ public class SFXManager : MonoBehaviour
             setPanStereo(-1f);
         }
         else
-            mute();
+        {
+            changeTime = Random.Range(minChangeTime, maxChangeTime);
+            elapsedTime = 0;    
+
+        }
+            //mute();
     }
    
     public void ResetAudio()
