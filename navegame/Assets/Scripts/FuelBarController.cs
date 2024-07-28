@@ -41,7 +41,12 @@ public class FuelBarController : MonoBehaviour
         _innerImage = _innerBar.GetComponent<Image>();
         RestartFuelBar();
     }
-
+    /*
+    private void Update()
+    {
+        print(remainingFuel);
+    }
+     */
     public void AddFuel(float fuel)
     {
         remainingFuel += fuel;

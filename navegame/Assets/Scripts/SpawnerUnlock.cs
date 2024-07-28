@@ -35,7 +35,7 @@ public class SpawnerUnlock : MonoBehaviour
         if (spawnersUnlocked_ < auxiliarSpawners_.Length)
         {
 
-            Debug.Log(elapsedTime_ + " > " + unlockTime_);
+            //Debug.Log(elapsedTime_ + " > " + unlockTime_);
 
             if (elapsedTime_ > unlockTime_)
             {
