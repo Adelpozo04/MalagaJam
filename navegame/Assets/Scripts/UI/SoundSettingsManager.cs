@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using LootLocker.Extension.Responses;
 using UnityEngine;
 
 public class SoundSettingsManager : MonoBehaviour

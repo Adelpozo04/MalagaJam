@@ -47,7 +47,7 @@ public class PlayerInfoManager : MonoBehaviour
             if (response.success)
             {
                 Debug.Log("Jugador se unio");
-                PlayerPrefs.SetString("PlayerID", (response.player_id.ToString()));
+                PlayerPrefs.SetString("PlayerID", response.player_id.ToString());
                 done = true;
             }
             else
