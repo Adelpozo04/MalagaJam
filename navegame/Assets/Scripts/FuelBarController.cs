@@ -25,6 +25,7 @@ public class FuelBarController : MonoBehaviour
 
     private float totalFuelConsumed;
 
+    bool corrutinaStarted = false;  
 
     public float getFuelConsumed()
     {
@@ -67,7 +68,7 @@ public class FuelBarController : MonoBehaviour
         remainingFuel -= fuel;
         totalFuelConsumed += fuel;
 
-        if (remainingFuel <= 0)
+        if (remainingFuel <= 0 && !corrutinaStarted)
         {
             GameOver();
         }
@@ -110,6 +111,7 @@ public class FuelBarController : MonoBehaviour
 
     IEnumerator goToGameOver()
     {
+        corrutinaStarted = true;     
         Time.timeScale = 0.0f;
 
 
