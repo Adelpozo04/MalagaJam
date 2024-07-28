@@ -108,10 +108,7 @@ MonoBehaviour:
   changeDirSpeed_: 0
   maxLateralSpeed_: 1
   lateralMovement: 0
-<<<<<<< Updated upstream
   randomLateralMove: 1
-=======
->>>>>>> Stashed changes
 --- !u!114 &-1408724174495210265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,11 +124,7 @@ MonoBehaviour:
   outOfFloor: 1
   outOfRight: 0
   outOfLeft: 0
-<<<<<<< Updated upstream
   margen: 1
-=======
-  margen: 2
->>>>>>> Stashed changes
 --- !u!114 &4977873453696815414
 MonoBehaviour:
   m_ObjectHideFlags: 0
