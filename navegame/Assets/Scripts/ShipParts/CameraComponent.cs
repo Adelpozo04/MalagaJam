@@ -26,7 +26,7 @@ public class CameraComponent : ShipComponent
         }
         else
         {
-            myShipMng_.sufferDamage((compLife_ - 1) * -10);
+            myShipMng_.sufferDamage((compLife_ - 1) * -15);
         }
         compLife_--;
         SFXManager.instance.playSFXClip(destroyClip, transform, 1f);

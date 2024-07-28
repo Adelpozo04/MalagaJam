@@ -83,6 +83,12 @@ public class BulletComponent : MonoBehaviour
                 shipCmp.GotHit();
                 Destroy(gameObject);
             }
+
+            var shpmng = collision.GetComponent<ShipManager>();
+            if(shpmng != null)
+            {
+                shpmng.sufferDamage(-30);
+            }
         }
     }
 
