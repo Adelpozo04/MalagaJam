@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,5 +18,10 @@ public class MainMenu : MonoBehaviour
             Application.Quit();
     }
 
+    public void goToMainMenu()
+    {
+        SFXManager.instance.ResetAudio();
+        SceneManager.LoadScene(0);
+    }
 
 }

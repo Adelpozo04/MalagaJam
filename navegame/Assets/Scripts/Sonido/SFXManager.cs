@@ -154,23 +154,31 @@ public class SFXManager : MonoBehaviour
     /// </summary>
     public void destroySpeaker(bool derecho = true)
     {
-        if (!derecho && allAlive()){
+        if (!derecho && allAlive())
+        {
             leftSpeakerAlive = false;
             setPanStereo(1f);
         }
-        else if(derecho && allAlive()){
+        else if (derecho && allAlive())
+        {
             rightSpeakerAlive = false;
             setPanStereo(-1f);
         }
         else
             mute();
     }
-
-    private void Start()
+   
+    private void ResetAudio()
     {
+
         soundFXObject.panStereo = 0;
         soundFXObjectCont.panStereo = 0;
         soundFXObject.volume = 1;
         soundFXObjectCont.volume = 1;
+
+    }
+    private void Start()
+    {
+        ResetAudio();
     }
 }
