@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class FuelBarController : MonoBehaviour
 {
@@ -87,14 +88,13 @@ public class FuelBarController : MonoBehaviour
 
     void GameOver()
     {
-        leaderBoard.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
-        Time.timeScale = 0.0f;  
-
-
-        visualContaierGameOver.SetActive(true);
+    
+        StartCoroutine(goToGameOver());
 
     }
     
+ 
+
     public void goMainMenu()
     {
         SceneManager.LoadScene("MenuPrincipal");
@@ -103,5 +103,24 @@ public class FuelBarController : MonoBehaviour
     void UpdateLowLifeBar()
     {
         evilBar.SetActive(remainingFuel <= lowLifeThreshHold);
+    }
+
+
+
+    IEnumerator goToGameOver()
+    {
+        Time.timeScale = 0.0f;
+
+
+        visualContaierGameOver.SetActive(true);
+
+        //leaderBoard.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
+
+        yield return new WaitForSecondsRealtime(1.5f);
+        SceneManager.LoadScene("GameOver");
+
+        Time.timeScale = 1.0f;
+
+
     }
 }
