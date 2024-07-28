@@ -16,7 +16,7 @@ public class ApareceDesaparece : MonoBehaviour
 
     [SerializeField] private float invisibleTime_ = 3;
 
-    private float elapsedTime;
+    private float elapsedTime = 0;
 
     private bool invisibleMode_ = false;
 
@@ -38,7 +38,7 @@ public class ApareceDesaparece : MonoBehaviour
 
             currentAlfa_ += speed_;
 
-            if((currentAlfa_ % alfaDiference_) / alfaDiference_ <= 0.05)
+            if((currentAlfa_ % alfaDiference_) / alfaDiference_ <= 0.1)
             {
                 invisibleMode_= true;
 
@@ -48,11 +48,13 @@ public class ApareceDesaparece : MonoBehaviour
         else
         {
 
+            Debug.Log("Invisible: " + elapsedTime + " / " + invisibleTime_);
+
             if(elapsedTime > invisibleTime_)
             {
                 invisibleMode_ = false;
 
-                currentAlfa_ = 0.1f;
+                currentAlfa_ = 0.2f;
             }
             else
             {
