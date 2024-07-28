@@ -31,6 +31,13 @@ public class ShipManager : MonoBehaviour
     {
         fuelBar.SubstractFuel(damage);
     }
+
+    public void addFuel(float fuel)
+    {
+        fuelBar.AddFuel(fuel);
+
+    }
+
     #endregion
 
     // Start is called before the first frame update

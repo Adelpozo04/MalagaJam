@@ -106,8 +106,9 @@ MonoBehaviour:
   speed_: 2
   dir_: {x: -1, y: 0, z: 0}
   changeDirSpeed_: 0.05
-  maxLateralSpeed_: 5
+  maxLateralSpeed_: 2
   lateralMovement: 1
+  randomLateralMove: 0
 --- !u!114 &-7928793699949088661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,7 +140,7 @@ MonoBehaviour:
   maxLife: 10
   currentLife: 0
   fuelPrefab: {fileID: 7848089265289364465, guid: 7a0b3ca32e846684ca7dc46bdff087d2, type: 3}
-  dieClip: {fileID: 8300000, guid: c4f4851da7bb4724d90a33b8887bb1e5, type: 3}
+  dieClip: {fileID: 8300000, guid: fe03ec82ce5426349815ea58b0e6f4ce, type: 3}
 --- !u!61 &-8451209708777278161
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -204,7 +205,7 @@ MonoBehaviour:
   fireRate: 0
   enemyMinFireRate: 1
   enemyMaxFireRate: 2
-  shootClip: {fileID: 8300000, guid: 5bb25b7c946b4d445954df13b3c57289, type: 3}
+  shootClip: {fileID: 8300000, guid: 2aea2921a28351e4d8694e2cdf445e80, type: 3}
 --- !u!114 &7886072239771517174
 MonoBehaviour:
   m_ObjectHideFlags: 0

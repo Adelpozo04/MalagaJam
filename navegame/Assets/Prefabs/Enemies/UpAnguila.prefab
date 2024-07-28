@@ -107,6 +107,11 @@ MonoBehaviour:
   dir_: {x: 0, y: -1, z: 0}
   changeDirSpeed_: 0
   maxLateralSpeed_: 1
+  lateralMovement: 0
+<<<<<<< Updated upstream
+  randomLateralMove: 1
+=======
+>>>>>>> Stashed changes
 --- !u!114 &-1408724174495210265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,7 +125,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outOfFloor: 1
+  outOfRight: 0
+  outOfLeft: 0
+<<<<<<< Updated upstream
+  margen: 1
+=======
   margen: 2
+>>>>>>> Stashed changes
 --- !u!114 &4977873453696815414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,7 +147,7 @@ MonoBehaviour:
   maxLife: 10
   currentLife: 0
   fuelPrefab: {fileID: 7848089265289364465, guid: 7a0b3ca32e846684ca7dc46bdff087d2, type: 3}
-  dieClip: {fileID: 8300000, guid: 45882d27cc48b434ca284a2b8223fc35, type: 3}
+  dieClip: {fileID: 8300000, guid: eebe811be1e8d8b469659823e49c0f81, type: 3}
 --- !u!61 &-653920554504065405
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -201,7 +212,7 @@ MonoBehaviour:
   fireRate: 0
   enemyMinFireRate: 1
   enemyMaxFireRate: 2
-  shootClip: {fileID: 8300000, guid: 83a8c0883fd09544ca40c65118e9f0ab, type: 3}
+  shootClip: {fileID: 8300000, guid: 0ec7951681f089940a38b805a6dcd25d, type: 3}
 --- !u!114 &-4126405511029804665
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -17,6 +17,8 @@ public class LinealMovement : MonoBehaviour
 
     [SerializeField] private bool lateralMovement = false;
 
+    [SerializeField] private bool randomLateralMove = true;
+
     #endregion
 
     #region methods
@@ -42,7 +44,7 @@ public class LinealMovement : MonoBehaviour
 
         int n = Random.Range(0, 2);
 
-        if (n == 0)
+        if (n == 0 && randomLateralMove)
         {
             dir_.x *= -1;
         }
