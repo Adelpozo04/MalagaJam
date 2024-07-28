@@ -19,6 +19,8 @@ public class LinealMovement : MonoBehaviour
 
     [SerializeField] private bool randomLateralMove = true;
 
+    private bool move = true;
+
     #endregion
 
     #region methods
@@ -38,6 +40,11 @@ public class LinealMovement : MonoBehaviour
 
     }
 
+    public void ChangeMove(bool _move)
+    {
+        move = _move;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,8 +61,10 @@ public class LinealMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        transform.position += dir_ * speed_ * Time.deltaTime;
+        if (move)
+        {
+            transform.position += dir_ * speed_ * Time.deltaTime;
+        }
 
         if(changeDirSpeed_ != 0)
         {
