@@ -176,10 +176,8 @@ public class SFXManager : MonoBehaviour
 
         soundFXObject.panStereo = 0;
         soundFXObjectCont.panStereo = 0;
-        MusicObjectCont.panStereo = 0;
         soundFXObject.volume = 1;
         soundFXObjectCont.volume = 1;
-        MusicObjectCont.volume = 1;
     }
     private void Start()
     {

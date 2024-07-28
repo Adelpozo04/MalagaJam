@@ -402,6 +402,10 @@ PrefabInstance:
       propertyPath: visualContaierGameOver
       value: 
       objectReference: {fileID: 965040448}
+    - target: {fileID: 6532813104589903564, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
+      propertyPath: visualContaierWarningChange
+      value: 
+      objectReference: {fileID: 6609589965891871465}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1252,6 +1256,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8241892576180308291, guid: 857200fbf7ce2984ca35ec3048013329, type: 3}
+      propertyPath: MusicObjectCont
+      value: 
+      objectReference: {fileID: 519420036}
     - target: {fileID: 8241892576180308291, guid: 857200fbf7ce2984ca35ec3048013329, type: 3}
       propertyPath: playerTransform
       value: 
@@ -2518,6 +2526,11 @@ PrefabInstance:
 --- !u!224 &6609589965891871464 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8789860049675894607, guid: cb79600faeaf870469c37b661bb7dcec, type: 3}
+  m_PrefabInstance: {fileID: 6609589965891871463}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6609589965891871465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8166431985513173777, guid: cb79600faeaf870469c37b661bb7dcec, type: 3}
   m_PrefabInstance: {fileID: 6609589965891871463}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &6609589965891871467 stripped
