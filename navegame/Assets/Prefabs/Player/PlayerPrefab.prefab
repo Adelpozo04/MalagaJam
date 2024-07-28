@@ -5008,6 +5008,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93f7138edb886eb429c66d5a4d7009da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  compLife_: 3
+  fuelLoss_: -20
   right: 0
 --- !u!95 &1034353487607647939
 Animator:
@@ -5130,6 +5132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93f7138edb886eb429c66d5a4d7009da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  compLife_: 3
+  fuelLoss_: -20
   right: 1
 --- !u!61 &6968864076451200467
 BoxCollider2D:
@@ -5296,6 +5300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e8d389d2cf8124088803b4e36b3aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  compLife_: 2
+  fuelLoss_: -10
   isRight: 1
   destroyClip: {fileID: 8300000, guid: 6a7a60d5778c9174ba015e8e9da82208, type: 3}
 --- !u!61 &2852014993876362762
@@ -5463,6 +5469,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dd7b01d8eb269d4580b48efa2ed1329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  compLife_: 2
+  fuelLoss_: -15
   destroyClip: {fileID: 8300000, guid: 6a7a60d5778c9174ba015e8e9da82208, type: 3}
 --- !u!61 &5241004980962072662
 BoxCollider2D:
@@ -5629,6 +5637,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e8d389d2cf8124088803b4e36b3aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  compLife_: 2
+  fuelLoss_: -10
   isRight: 0
   destroyClip: {fileID: 8300000, guid: 6a7a60d5778c9174ba015e8e9da82208, type: 3}
 --- !u!61 &6793761924252487822

@@ -23,6 +23,9 @@ public class ChangeInputManager : MonoBehaviour
     {
         FuelBarController.Instance.SubstractFuel(fuelSpeendPerSecond* Time.deltaTime);
 
+        //print("Index : " + index);
+        //print(FuelBarController.Instance.getFuelConsumed());
+
 
         if (index < fuelCostToChange.Count && FuelBarController.Instance.getFuelConsumed() >= fuelCostToChange[index]) {
 

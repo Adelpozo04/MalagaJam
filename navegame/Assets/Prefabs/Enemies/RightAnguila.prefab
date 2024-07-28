@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 8823232176438677812}
   - component: {fileID: -4126405511029804665}
   - component: {fileID: 8928893096824373601}
+  - component: {fileID: -547085765664710350}
   m_Layer: 0
   m_Name: RightAnguila
   m_TagString: Untagged
@@ -108,10 +109,7 @@ MonoBehaviour:
   changeDirSpeed_: 0
   maxLateralSpeed_: 1
   lateralMovement: 0
-<<<<<<< Updated upstream
   randomLateralMove: 0
-=======
->>>>>>> Stashed changes
 --- !u!114 &-1408724174495210265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,3 +241,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-547085765664710350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7821278737678340700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 124a65bd8d3fe1445bda06674c158181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

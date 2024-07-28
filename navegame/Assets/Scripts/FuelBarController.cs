@@ -41,7 +41,12 @@ public class FuelBarController : MonoBehaviour
         _innerImage = _innerBar.GetComponent<Image>();
         RestartFuelBar();
     }
-
+    /*
+    private void Update()
+    {
+        print(remainingFuel);
+    }
+     */
     public void AddFuel(float fuel)
     {
         remainingFuel += fuel;
@@ -82,5 +87,7 @@ public class FuelBarController : MonoBehaviour
         
         leaderBoard_.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
         SceneManager.LoadScene("MenuPrincipal");
+
+        Time.timeScale = 1.0f;  
     }
 }

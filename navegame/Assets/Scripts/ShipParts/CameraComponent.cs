@@ -26,7 +26,7 @@ public class CameraComponent : ShipComponent
         }
         else
         {
-            myShipMng_.sufferDamage((compLife_ - 1) * -15);
+            myShipMng_.sufferDamage((compLife_ - 1) * fuelLoss_);
         }
         compLife_--;
         SFXManager.instance.playSFXClip(destroyClip, transform, 1f);
@@ -36,7 +36,6 @@ public class CameraComponent : ShipComponent
     // Start is called before the first frame update
     void Start()
     {
-        compLife_ = 1;
         //cameraInterference.SetFloat("_Clarity", 0f);
         effect = Camera.main.gameObject.GetComponent<VHSPostProcessEffect>();
         effect.enabled = false;

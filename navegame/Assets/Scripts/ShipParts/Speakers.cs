@@ -11,14 +11,14 @@ public class Speakers : ShipComponent
     {
         if (compLife_ == 1)
         {
+            GetComponent<Animator>().SetTrigger("Destroy");
             SFXManager.instance.playSFXClip(destroyClip, transform, 1f);
-            //GetComponent<Animator>().SetTrigger("Destroy");
             SFXManager.instance.playSFXClip(destroyClip, transform, 1f);
             SFXManager.instance.destroySpeaker(isRight);
         }
         else
         {
-            myShipMng_.sufferDamage((compLife_ - 1) * -10);
+            myShipMng_.sufferDamage((compLife_ - 1) * fuelLoss_);
         }
         compLife_--;
     }
