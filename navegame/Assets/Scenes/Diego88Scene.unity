@@ -3149,7 +3149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4343959314384885268, guid: dffcd048ed81ca441aad186df09fdd34, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -301
+      value: -287
       objectReference: {fileID: 0}
     - target: {fileID: 4343959314384885268, guid: dffcd048ed81ca441aad186df09fdd34, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3207,6 +3207,10 @@ PrefabInstance:
     - target: {fileID: 3225969468734478686, guid: e2f938793ea14a6428bc3357deca0f11, type: 3}
       propertyPath: m_Name
       value: PanelAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225969468734478686, guid: e2f938793ea14a6428bc3357deca0f11, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3969159448703226898, guid: e2f938793ea14a6428bc3357deca0f11, type: 3}
       propertyPath: m_AnchorMax.x
