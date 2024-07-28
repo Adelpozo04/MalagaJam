@@ -663,18 +663,6 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4343959314384885268, guid: dffcd048ed81ca441aad186df09fdd34, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.62499994
-      objectReference: {fileID: 0}
-    - target: {fileID: 4343959314384885268, guid: dffcd048ed81ca441aad186df09fdd34, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.62499994
-      objectReference: {fileID: 0}
-    - target: {fileID: 4343959314384885268, guid: dffcd048ed81ca441aad186df09fdd34, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.62499994
-      objectReference: {fileID: 0}
-    - target: {fileID: 4343959314384885268, guid: dffcd048ed81ca441aad186df09fdd34, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -2275,10 +2263,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PanelAudio
       objectReference: {fileID: 0}
-    - target: {fileID: 3225969468734478686, guid: e2f938793ea14a6428bc3357deca0f11, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3969159448703226898, guid: e2f938793ea14a6428bc3357deca0f11, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2348,18 +2332,6 @@ PrefabInstance:
       value: 332.3
       objectReference: {fileID: 0}
     - target: {fileID: 8898061520051622483, guid: e2f938793ea14a6428bc3357deca0f11, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8898061520051622483, guid: e2f938793ea14a6428bc3357deca0f11, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8898061520051622483, guid: e2f938793ea14a6428bc3357deca0f11, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8898061520051622483, guid: e2f938793ea14a6428bc3357deca0f11, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -2389,11 +2361,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8898061520051622483, guid: e2f938793ea14a6428bc3357deca0f11, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -13
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8898061520051622483, guid: e2f938793ea14a6428bc3357deca0f11, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8898061520051622483, guid: e2f938793ea14a6428bc3357deca0f11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2406,10 +2378,6 @@ PrefabInstance:
     - target: {fileID: 8898061520051622483, guid: e2f938793ea14a6428bc3357deca0f11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8898061520051622483, guid: e2f938793ea14a6428bc3357deca0f11, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
