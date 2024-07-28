@@ -90,7 +90,8 @@ public class FuelBarController : MonoBehaviour
 
     void GameOver()
     {
-    
+        leaderBoard.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
+
         StartCoroutine(goToGameOver());
 
     }
@@ -112,13 +113,16 @@ public class FuelBarController : MonoBehaviour
     IEnumerator goToGameOver()
     {
         corrutinaStarted = true;     
-        Time.timeScale = 0.0f;
 
 
         visualContaierGameOver.SetActive(true);
-        visualContaierGameOver.SetActive(false);
 
-        leaderBoard.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
+
+        Time.timeScale = 0.0f;
+
+
+        yield return new WaitForSecondsRealtime(0.05f);
+        visualContaierWarningChange.SetActive(false);
 
         yield return new WaitForSecondsRealtime(1.5f);
         SceneManager.LoadScene("GameOver");
