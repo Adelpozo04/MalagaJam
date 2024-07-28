@@ -1253,6 +1253,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8241892576180308291, guid: 857200fbf7ce2984ca35ec3048013329, type: 3}
+      propertyPath: MusicObjectCont
+      value: 
+      objectReference: {fileID: 519420036}
+    - target: {fileID: 8241892576180308291, guid: 857200fbf7ce2984ca35ec3048013329, type: 3}
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 666399533}
