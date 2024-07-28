@@ -366,6 +366,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1876817110751301259, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.033816338
+      objectReference: {fileID: 0}
+    - target: {fileID: 1876817110751301259, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1876817110751301259, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3123153274391775779, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
       propertyPath: m_Name
       value: FuelBar
