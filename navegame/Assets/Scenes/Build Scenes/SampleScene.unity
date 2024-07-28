@@ -366,18 +366,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1876817110751301259, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.033816338
+      objectReference: {fileID: 0}
+    - target: {fileID: 1876817110751301259, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1876817110751301259, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3123153274391775779, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
       propertyPath: m_Name
       value: FuelBar
       objectReference: {fileID: 0}
     - target: {fileID: 6532813104589903564, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
       propertyPath: maxFuel
-      value: 150
+      value: 1250
       objectReference: {fileID: 0}
+    - target: {fileID: 6532813104589903564, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
+      propertyPath: leaderBoard
+      value: 
+      objectReference: {fileID: 361218874}
     - target: {fileID: 6532813104589903564, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
       propertyPath: leaderBoard_
       value: 
       objectReference: {fileID: 361218874}
+    - target: {fileID: 6532813104589903564, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
+      propertyPath: lowLifeThreshHold
+      value: 380
+      objectReference: {fileID: 0}
     - target: {fileID: 6532813104589903564, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
       propertyPath: visualContaierGameOver
       value: 

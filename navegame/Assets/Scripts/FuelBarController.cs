@@ -7,15 +7,17 @@ public class FuelBarController : MonoBehaviour
 {
 
     public static FuelBarController Instance ;
-
     public GameObject visualContaierGameOver;
 
     [SerializeField] private float maxFuel;
     [SerializeField] private float remainingFuel;
     [SerializeField] private Vector2 innerBarProportions;
     
-    [SerializeField] private LeaderBoard leaderBoard_;
-    [SerializeField] private GameObject _innerBar;
+    [SerializeField] private LeaderBoard leaderBoard;
+    [SerializeField] private GameObject innerBar;
+    [SerializeField] private GameObject evilBar;
+    [SerializeField] private int lowLifeThreshHold;
+
     private Image _innerImage;
 
 
@@ -39,17 +41,10 @@ public class FuelBarController : MonoBehaviour
     void Start()
     {
         //Inicializa la barra interior al tamaño y la posición adecuada
-        _innerImage = _innerBar.GetComponent<Image>();
+        _innerImage = innerBar.GetComponent<Image>();
         RestartFuelBar();
     }
     
-    /*
-    private void Update()
-    {
-        print(remainingFuel);
-    }
-     
-     */
     public void AddFuel(float fuel)
     {
         remainingFuel += fuel;
@@ -87,24 +82,26 @@ public class FuelBarController : MonoBehaviour
     private void UpdateBar()
     {
         _innerImage.fillAmount = (float) remainingFuel / maxFuel;
+        UpdateLowLifeBar();
     }
 
     void GameOver()
     {
-        //Descomentar cuando esté funcionando el leaderBoard
-        
-        leaderBoard_.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
+        leaderBoard.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
         Time.timeScale = 0.0f;  
 
 
         visualContaierGameOver.SetActive(true);
 
     }
-
-
+    
     public void goMainMenu()
     {
         SceneManager.LoadScene("MenuPrincipal");
+    }
 
+    void UpdateLowLifeBar()
+    {
+        evilBar.SetActive(remainingFuel <= lowLifeThreshHold);
     }
 }
