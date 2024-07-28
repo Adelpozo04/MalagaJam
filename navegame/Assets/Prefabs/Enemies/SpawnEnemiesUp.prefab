@@ -73,6 +73,7 @@ MonoBehaviour:
   changeDirSpeed_: 0
   maxLateralSpeed_: 1
   lateralMovement: 0
+  randomLateralMove: 1
 --- !u!114 &51502387819714615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,4 +86,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1430decd76ccfd34e88782a94e9fe36b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LeftRight_: 1
+  UpDown_: 0
   margenInterno: 3

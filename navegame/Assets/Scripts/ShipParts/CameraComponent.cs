@@ -13,6 +13,10 @@ public class CameraComponent : ShipComponent
     private VHSPostProcessEffect effect;
 
     [SerializeField] private AudioClip destroyClip;
+
+    [SerializeField] GameObject estatica_;
+
+    [SerializeField] GameObject estaticaHud_;
     #endregion
 
     #region methods
@@ -22,7 +26,19 @@ public class CameraComponent : ShipComponent
         {
             GetComponent<Animator>().SetTrigger("Destroy");
             //cameraInterference.SetFloat("_Clarity", 0.04f);
-            effect.enabled = true;
+
+            //if(Application.platform != RuntimePlatform.WebGLPlayer)
+            //{
+            //    effect.enabled = true;
+            //}
+            //else
+            //{
+                estaticaHud_.SetActive(true);
+                estatica_.SetActive(true);
+            //}
+            
+
+
         }
         else
         {
@@ -40,6 +56,7 @@ public class CameraComponent : ShipComponent
         effect = Camera.main.gameObject.GetComponent<VHSPostProcessEffect>();
         effect.enabled = false;
         myShipMng_ = this.transform.parent.gameObject.GetComponent<ShipManager>();
+
     }
 
 

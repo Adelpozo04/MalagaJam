@@ -8,6 +8,7 @@ public class FuelBarController : MonoBehaviour
 
     public static FuelBarController Instance ;
 
+    public GameObject visualContaierGameOver;
 
     [SerializeField] private float maxFuel;
     [SerializeField] private float remainingFuel;
@@ -41,11 +42,13 @@ public class FuelBarController : MonoBehaviour
         _innerImage = _innerBar.GetComponent<Image>();
         RestartFuelBar();
     }
+    
     /*
     private void Update()
     {
         print(remainingFuel);
     }
+     
      */
     public void AddFuel(float fuel)
     {
@@ -59,6 +62,11 @@ public class FuelBarController : MonoBehaviour
 
     public void SubstractFuel(float fuel)
     {
+
+        if (fuel < 0) { 
+            //print("maaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaal"); 
+            fuel*=-1;   
+        }
         remainingFuel -= fuel;
         totalFuelConsumed += fuel;
 
@@ -86,8 +94,17 @@ public class FuelBarController : MonoBehaviour
         //Descomentar cuando esté funcionando el leaderBoard
         
         leaderBoard_.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
+        Time.timeScale = 0.0f;  
+
+
+        visualContaierGameOver.SetActive(true);
+
+    }
+
+
+    public void goMainMenu()
+    {
         SceneManager.LoadScene("MenuPrincipal");
 
-        Time.timeScale = 1.0f;  
     }
 }

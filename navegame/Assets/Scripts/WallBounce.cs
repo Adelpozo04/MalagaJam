@@ -41,8 +41,8 @@ public class WallBounce : MonoBehaviour
         if(UpDown_)
         {
 
-            if (Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 1f, 0)).y >= transform.position.y + margenInterno ||
-            transform.position.y - margenInterno >= Camera.main.ViewportToWorldPoint(new Vector3(0, 0f, 0)).y)
+            if (Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 1f, 0)).y <= transform.position.y + margenInterno ||
+            transform.position.y - margenInterno <= Camera.main.ViewportToWorldPoint(new Vector3(0, 0f, 0)).y)
             {
 
                 lm_.ChangeDirection(new Vector3(0, 1, 0));
