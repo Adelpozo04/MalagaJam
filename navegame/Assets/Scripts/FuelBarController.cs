@@ -112,13 +112,17 @@ public class FuelBarController : MonoBehaviour
     IEnumerator goToGameOver()
     {
         corrutinaStarted = true;     
-        Time.timeScale = 0.0f;
 
 
         visualContaierGameOver.SetActive(true);
-        visualContaierGameOver.SetActive(false);
+
+
+        Time.timeScale = 0.0f;
 
         leaderBoard.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
+
+        yield return new WaitForSecondsRealtime(0.05f);
+        visualContaierWarningChange.SetActive(false);
 
         yield return new WaitForSecondsRealtime(1.5f);
         SceneManager.LoadScene("GameOver");
