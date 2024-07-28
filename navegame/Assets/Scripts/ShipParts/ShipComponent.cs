@@ -5,7 +5,10 @@ using UnityEngine;
 public class ShipComponent : MonoBehaviour
 {
     #region parameters
+    [SerializeField]
     protected int compLife_;
+    [SerializeField]
+    protected int fuelLoss_;
     #endregion
 
     #region references
