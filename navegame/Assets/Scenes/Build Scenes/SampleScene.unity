@@ -598,6 +598,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e8d389d2cf8124088803b4e36b3aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  compLife_: 0
+  fuelLoss_: 0
   isRight: 1
   destroyClip: {fileID: 8300000, guid: 6a7a60d5778c9174ba015e8e9da82208, type: 3}
 --- !u!1 &519420028

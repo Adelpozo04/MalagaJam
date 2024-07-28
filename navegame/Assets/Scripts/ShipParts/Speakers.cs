@@ -18,7 +18,7 @@ public class Speakers : ShipComponent
         }
         else
         {
-            myShipMng_.sufferDamage((compLife_ - 1) * -10);
+            myShipMng_.sufferDamage((compLife_ - 1) * fuelLoss_);
         }
         compLife_--;
     }
