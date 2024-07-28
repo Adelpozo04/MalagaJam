@@ -87,5 +87,7 @@ public class FuelBarController : MonoBehaviour
         
         leaderBoard_.SumbitScoreRoutine(ScoreManager.Instance.GetScore());
         SceneManager.LoadScene("MenuPrincipal");
+
+        Time.timeScale = 1.0f;  
     }
 }
