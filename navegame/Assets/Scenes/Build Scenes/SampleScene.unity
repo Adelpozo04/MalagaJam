@@ -384,7 +384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6532813104589903564, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
       propertyPath: maxFuel
-      value: 100
+      value: 1250
       objectReference: {fileID: 0}
     - target: {fileID: 6532813104589903564, guid: 79166061bc27aed4f8c18dd3122fa25c, type: 3}
       propertyPath: leaderBoard
@@ -433,7 +433,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 855823438724424762, guid: 906e4634e31817342bb4f37402893d40, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1304672590621206710, guid: 906e4634e31817342bb4f37402893d40, type: 3}
       propertyPath: m_LocalScale.x
