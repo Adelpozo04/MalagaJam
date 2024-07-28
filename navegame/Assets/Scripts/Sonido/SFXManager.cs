@@ -166,11 +166,17 @@ public class SFXManager : MonoBehaviour
             mute();
     }
 
-    private void Start()
+    public void ResetAudio()
     {
+
         soundFXObject.panStereo = 0;
         soundFXObjectCont.panStereo = 0;
         soundFXObject.volume = 1;
         soundFXObjectCont.volume = 1;
+
+    }
+    private void Start()
+    {
+        ResetAudio();
     }
 }
