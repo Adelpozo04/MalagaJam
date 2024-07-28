@@ -65,7 +65,7 @@ public class SFXManager : MonoBehaviour
         audioSource.clip = motorAudio[0];
 
         //assign volume
-        audioSource.volume = 1f * volumeFactor;
+        audioSource.volume = soundFXObject.volume;
 
         //play clip
         audioSource.Play();
@@ -144,30 +144,30 @@ public class SFXManager : MonoBehaviour
         soundFXObjectCont.volume = 0;
     }
 
+    private bool allAlive()
+    {
+        return leftSpeakerAlive && rightSpeakerAlive;
+    }
+
     /// <summary>
     /// Destruyes el izquierdo con un false y el derecho con un true
     /// </summary>
     public void destroySpeaker(bool derecho = true)
     {
-        if (!derecho && leftSpeakerAlive && rightSpeakerAlive)
-        {
+        if (!derecho && allAlive()){
             leftSpeakerAlive = false;
             setPanStereo(1f);
         }
-        else
-            mute();
-
-        if (derecho && rightSpeakerAlive && leftSpeakerAlive)
-        {
+        else if(derecho && allAlive()){
             rightSpeakerAlive = false;
             setPanStereo(-1f);
         }
         else
             mute();
     }
+
     private void Start()
     {
-
         soundFXObject.panStereo = 0;
         soundFXObjectCont.panStereo = 0;
         soundFXObject.volume = 1;
