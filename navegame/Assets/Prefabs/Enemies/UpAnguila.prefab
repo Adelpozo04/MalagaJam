@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 8823232176438677812}
   - component: {fileID: -4126405511029804665}
   - component: {fileID: 8928893096824373601}
+  - component: {fileID: 8200189124171873407}
   m_Layer: 0
   m_Name: UpAnguila
   m_TagString: Untagged
@@ -240,3 +241,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8200189124171873407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7821278737678340700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 124a65bd8d3fe1445bda06674c158181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
