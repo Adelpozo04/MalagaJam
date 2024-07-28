@@ -39,7 +39,7 @@ public class SFXManager : MonoBehaviour
         audioSource.clip = audioClip;
 
         //assign volume
-        audioSource.volume = volume * volumeFactor;
+        audioSource.volume = soundFXObject.volume;
 
         //play clip
         audioSource.Play();
@@ -121,7 +121,7 @@ public class SFXManager : MonoBehaviour
         audioSource.clip = motorAudio[1];
 
         //assign volume
-        audioSource.volume = 0.5f * volumeFactor;
+        audioSource.volume = soundFXObjectCont.volume;
 
         //play clip
         audioSource.Play();
