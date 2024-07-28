@@ -14,6 +14,8 @@ public class TutorialController : MonoBehaviour
     [SerializeField] private GameObject controls;
     [SerializeField] private TMP_Text title;
     [SerializeField] private TMP_Text desc;
+    [SerializeField] private GameObject tutorialTitle;
+    [SerializeField] private GameObject iconosTeclas;
     
     private int _stage;
     private void Start()
@@ -37,11 +39,17 @@ public class TutorialController : MonoBehaviour
                 break;
             case 2:
                 title.text = "¡Los sistemas de control están fallando!";
-                desc.text = "A medida que se consuma tu gasolina los controles cambiarán. Se te avisará con antelación. ¡Buena suerte!";
+                desc.text = "A medida que se consuma tu gasolina los controles cambiarán. Se te avisará con antelación.";
                 controls.SetActive(true);
-                botonText.text = "VOLVER";
                 break;
             case 3:
+                title.text = "Una última cosa";
+                desc.text = "Puedes pausar la partida con ESC y alternar los controles en pantalla con TAB";
+                botonText.text = "VOLVER";
+                tutorialTitle.SetActive(false);
+                iconosTeclas.SetActive(true);
+                break;
+            case 4:
                 SceneManager.LoadScene(0);
                 break;
         }
