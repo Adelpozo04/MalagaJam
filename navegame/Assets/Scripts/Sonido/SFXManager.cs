@@ -42,7 +42,7 @@ public class SFXManager : MonoBehaviour
     private void Update()
     {
          
-        //if(!leftSpeakerAlive && !rightSpeakerAlive)
+        if(!leftSpeakerAlive && !rightSpeakerAlive)
         {
             elapsedTime += Time.deltaTime;
 
